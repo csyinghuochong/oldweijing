@@ -21,8 +21,8 @@ public class aaaa : MonoBehaviour {
         terrainData.baseMapResolution = _terrain.terrainData.baseMapResolution;
         terrainData.splatPrototypes = _terrain.terrainData.splatPrototypes;
 
-        float[,] heights = _terrain.terrainData.GetHeights(0, 0, _terrain.terrainData.heightmapWidth,
-            _terrain.terrainData.heightmapHeight);
+        float[,] heights = _terrain.terrainData.GetHeights(0, 0, _terrain.terrainData.heightmapResolution,
+            _terrain.terrainData.heightmapResolution);
         terrainData.SetHeights(0, 0, heights);
 
         float[, ,] alphaMap = _terrain.terrainData.GetAlphamaps(0, 0, _terrain.terrainData.alphamapWidth, _terrain.terrainData.alphamapHeight);
