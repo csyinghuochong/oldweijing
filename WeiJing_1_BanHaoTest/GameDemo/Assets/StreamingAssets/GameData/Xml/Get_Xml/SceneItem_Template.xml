@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<DateArea>
+	<date ID="41001001" Name="怪物的宝藏" Type="1" AppearPro="10000" Quality="3" ModelName="0" DropID="50020002" OpenItemID="0" OpenValue="0" OpenTime="5" />
+	<date ID="41001002" Name="杂乱的骨头" Type="1" AppearPro="10000" Quality="2" ModelName="0" DropID="50020001" OpenItemID="0" OpenValue="0" OpenTime="3" />
+	<date ID="41001003" Name="普通的小木箱" Type="1" AppearPro="10000" Quality="2" ModelName="0" DropID="50020001" OpenItemID="0" OpenValue="0" OpenTime="3" />
+	<date ID="41001004" Name="坚固的箱子" Type="1" AppearPro="10000" Quality="2" ModelName="0" DropID="50020001" OpenItemID="0" OpenValue="0" OpenTime="3" />
+	<date ID="41001005" Name="奇怪的箱子" Type="1" AppearPro="10000" Quality="3" ModelName="0" DropID="50020001" OpenItemID="0" OpenValue="0" OpenTime="3" />
+	<date ID="41001006" Name="杂乱的骨头" Type="1" AppearPro="10000" Quality="2" ModelName="0" DropID="0" OpenItemID="0" OpenValue="0" OpenTime="3" />
+	<date ID="41001007" Name="矿石" Type="1" AppearPro="10000" Quality="1" ModelName="0" DropID="50030006" OpenItemID="0" OpenValue="0" OpenTime="3" />
+	<date ID="41001008" Name="矿工的袋子" Type="1" AppearPro="10000" Quality="1" ModelName="0" DropID="50030005" OpenItemID="0" OpenValue="0" OpenTime="3" />
+	<date ID="41001009" Name="水晶" Type="1" AppearPro="10000" Quality="1" ModelName="0" DropID="50030007" OpenItemID="0" OpenValue="0" OpenTime="3" />
+	<date ID="41001010" Name="解毒草" Type="1" AppearPro="10000" Quality="1" ModelName="0" DropID="50030004" OpenItemID="0" OpenValue="0" OpenTime="3" />
+	<date ID="41001011" Name="黄金宝箱(需钥匙)" Type="1" AppearPro="10000" Quality="4" ModelName="0" DropID="50020002" OpenItemID="10010033" OpenValue="1" OpenTime="3" />
+	<date ID="41001012" Name="黄金宝箱(需钥匙)" Type="1" AppearPro="10000" Quality="4" ModelName="0" DropID="50020002" OpenItemID="10010033" OpenValue="1" OpenTime="3" />
+	<date ID="41001020" Name="坚固的箱子" Type="1" AppearPro="10000" Quality="3" ModelName="0" DropID="50020000" OpenItemID="0" OpenValue="0" OpenTime="3" />
+	<date ID="41001021" Name="坚固的箱子" Type="1" AppearPro="10000" Quality="3" ModelName="0" DropID="50020012" OpenItemID="0" OpenValue="0" OpenTime="3" />
+	<date ID="41001022" Name="散落的货箱" Type="1" AppearPro="10000" Quality="3" ModelName="0" DropID="50020011" OpenItemID="0" OpenValue="0" OpenTime="3" />
+	<date ID="41001023" Name="铁宝箱" Type="1" AppearPro="10000" Quality="3" ModelName="0" DropID="50020012" OpenItemID="0" OpenValue="0" OpenTime="3" />
+	<date ID="41002001" Name="清水" Type="1" AppearPro="10000" Quality="1" ModelName="0" DropID="50031001" OpenItemID="0" OpenValue="0" OpenTime="3" />
+	<date ID="41002002" Name="村民灵魄" Type="1" AppearPro="10000" Quality="1" ModelName="0" DropID="50031011" OpenItemID="0" OpenValue="0" OpenTime="3" />
+	<date ID="41002011" Name="村民的货箱" Type="1" AppearPro="10000" Quality="1" ModelName="0" DropID="50020021" OpenItemID="0" OpenValue="0" OpenTime="3" />
+	<date ID="41002012" Name="精致的宝箱" Type="1" AppearPro="10000" Quality="1" ModelName="0" DropID="50020022" OpenItemID="0" OpenValue="0" OpenTime="3" />
+	<date ID="41002013" Name="黄金宝箱" Type="1" AppearPro="10000" Quality="1" ModelName="0" DropID="50020023" OpenItemID="10010033" OpenValue="2" OpenTime="3" />
+	<date ID="41003001" Name="千针石块" Type="1" AppearPro="10000" Quality="1" ModelName="0" DropID="50031021" OpenItemID="0" OpenValue="0" OpenTime="3" />
+	<date ID="41003011" Name="小木箱" Type="1" AppearPro="10000" Quality="1" ModelName="0" DropID="50020031" OpenItemID="0" OpenValue="0" OpenTime="3" />
+	<date ID="41003012" Name="精致的宝箱" Type="1" AppearPro="10000" Quality="1" ModelName="0" DropID="50020032" OpenItemID="0" OpenValue="0" OpenTime="3" />
+	<date ID="41003013" Name="黄金宝箱" Type="1" AppearPro="10000" Quality="1" ModelName="0" DropID="50020033" OpenItemID="10010033" OpenValue="3" OpenTime="3" />
+	<date ID="41004001" Name="上好的木材" Type="1" AppearPro="10000" Quality="1" ModelName="0" DropID="50031031" OpenItemID="0" OpenValue="0" OpenTime="3" />
+	<date ID="41004011" Name="小木箱" Type="1" AppearPro="10000" Quality="1" ModelName="0" DropID="50020041" OpenItemID="0" OpenValue="0" OpenTime="3" />
+	<date ID="41004012" Name="精致的宝箱" Type="1" AppearPro="10000" Quality="1" ModelName="0" DropID="50020042" OpenItemID="0" OpenValue="0" OpenTime="3" />
+	<date ID="41004013" Name="黄金宝箱" Type="1" AppearPro="10000" Quality="1" ModelName="0" DropID="50020043" OpenItemID="10010033" OpenValue="4" OpenTime="3" />
+	<date ID="41005001" Name="熔岩炙水" Type="1" AppearPro="10000" Quality="1" ModelName="0" DropID="50031041" OpenItemID="0" OpenValue="0" OpenTime="3" />
+	<date ID="41005011" Name="骨架" Type="1" AppearPro="10000" Quality="1" ModelName="0" DropID="50020051" OpenItemID="0" OpenValue="0" OpenTime="3" />
+	<date ID="41005012" Name="精致的宝箱" Type="1" AppearPro="10000" Quality="1" ModelName="0" DropID="50020052" OpenItemID="0" OpenValue="0" OpenTime="3" />
+	<date ID="41005013" Name="黄金宝箱" Type="1" AppearPro="10000" Quality="1" ModelName="0" DropID="50020053" OpenItemID="10010033" OpenValue="5" OpenTime="3" />
+	<date ID="41001101" Name="铜宝箱_测试" Type="1" AppearPro="10000" Quality="3" ModelName="0" DropID="50020004" OpenItemID="10010031" OpenValue="1" OpenTime="3" />
+	<date ID="41001102" Name="银宝箱_测试" Type="1" AppearPro="10000" Quality="4" ModelName="0" DropID="50020004" OpenItemID="10010032" OpenValue="1" OpenTime="3" />
+	<date ID="41001103" Name="金宝箱_测试" Type="1" AppearPro="10000" Quality="5" ModelName="0" DropID="50020004" OpenItemID="10010033" OpenValue="1" OpenTime="3" />
+	<date ID="41099001" Name="测试图片宝箱" Type="2" AppearPro="10000" Quality="3" ModelName="0" DropID="0" OpenItemID="0" OpenValue="0" OpenTime="5" />
+	<date ID="41099002" Name="测试触发场景物" Type="3" AppearPro="10000" Quality="3" ModelName="0" DropID="0" OpenItemID="0" OpenValue="0" OpenTime="0" />
+</DateArea>

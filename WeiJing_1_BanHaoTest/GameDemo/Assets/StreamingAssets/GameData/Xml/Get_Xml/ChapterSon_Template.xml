@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<DateArea>
+	<date ID="1001" ChapterSonName="绿林小镇" ChapterSonNameOut="第一章" SceneIDSet="1001" />
+	<date ID="1002" ChapterSonName="矿洞一层" ChapterSonNameOut="第二章" SceneIDSet="1002" />
+	<date ID="1003" ChapterSonName="绿林郊外" ChapterSonNameOut="第三章" SceneIDSet="1004" />
+	<date ID="1004" ChapterSonName="石墓一层" ChapterSonNameOut="第四章" SceneIDSet="1007" />
+	<date ID="1005" ChapterSonName="死亡洞穴" ChapterSonNameOut="第五章" SceneIDSet="1006" />
+	<date ID="2001" ChapterSonName="热荒沙漠" ChapterSonNameOut="第一章" SceneIDSet="2001" />
+	<date ID="2002" ChapterSonName="绿洲小径" ChapterSonNameOut="第二章" SceneIDSet="2002" />
+	<date ID="2003" ChapterSonName="诅咒废墟" ChapterSonNameOut="第三章" SceneIDSet="2003" />
+	<date ID="2004" ChapterSonName="地牢一层" ChapterSonNameOut="第四章" SceneIDSet="2004" />
+	<date ID="3001" ChapterSonName="冰封城镇" ChapterSonNameOut="第一章" SceneIDSet="3001" />
+	<date ID="3002" ChapterSonName="冰封堡垒" ChapterSonNameOut="第二章" SceneIDSet="3003" />
+	<date ID="3003" ChapterSonName="千针叶林" ChapterSonNameOut="第三章" SceneIDSet="3004" />
+	<date ID="3004" ChapterSonName="冰封之路" ChapterSonNameOut="第四章" SceneIDSet="3005" />
+	<date ID="3005" ChapterSonName="冰封魔穴" ChapterSonNameOut="第五章" SceneIDSet="3006" />
+	<date ID="4001" ChapterSonName="暮色城镇" ChapterSonNameOut="第一章" SceneIDSet="4001" />
+	<date ID="4002" ChapterSonName="暮色森林" ChapterSonNameOut="第二章" SceneIDSet="4003" />
+	<date ID="4003" ChapterSonName="暮色矿洞一层" ChapterSonNameOut="第三章" SceneIDSet="4004" />
+	<date ID="4004" ChapterSonName="裂石峡谷" ChapterSonNameOut="第四章" SceneIDSet="4006" />
+	<date ID="4005" ChapterSonName="地狱裂谷" ChapterSonNameOut="第五章" SceneIDSet="4007" />
+	<date ID="5001" ChapterSonName="黑暗小镇" ChapterSonNameOut="第一章" SceneIDSet="5001" />
+	<date ID="5002" ChapterSonName="诡异小径" ChapterSonNameOut="第二章" SceneIDSet="5002" />
+	<date ID="5003" ChapterSonName="黑暗走廊一层" ChapterSonNameOut="第三章" SceneIDSet="5004" />
+	<date ID="5004" ChapterSonName="黑暗走廊三层" ChapterSonNameOut="第四章" SceneIDSet="5006" />
+	<date ID="5005" ChapterSonName="黑暗之心" ChapterSonNameOut="第五章" SceneIDSet="5007" />
+</DateArea>

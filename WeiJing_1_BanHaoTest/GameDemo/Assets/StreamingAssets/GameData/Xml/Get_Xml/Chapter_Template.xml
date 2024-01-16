@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<DateArea>
+	<date ID="1" ChapterName="家园危机" ChapterNameOut="第一章" SceneIDSet="1001;1002;1003;1004;1005" />
+	<date ID="2" ChapterName="荒漠探险" ChapterNameOut="第二章" SceneIDSet="2001;2002;2003;2004" />
+	<date ID="3" ChapterName="冰封世界" ChapterNameOut="第三章" SceneIDSet="3001;3002;3003;3004;3005" />
+	<date ID="4" ChapterName="暮色危境" ChapterNameOut="第四章" SceneIDSet="4001;4002;4003;4004;4005" />
+	<date ID="5" ChapterName="黑暗陨落" ChapterNameOut="第五章" SceneIDSet="5001;5002;5003;5004;5005" />
+</DateArea>

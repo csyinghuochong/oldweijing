@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<DateArea>
+  <date ID="10002" Lv="1" Name="小小法师" ZhangHaoID="0" GoldNum ="90000000" RMB="9000000" RMBPayValue="99999" YueKa ="0" YueKaDayStatus ="0" TiLi="99999" MaxTiLi="0" SP="60" RoseExpNow ="0" RoseHpNow="60" RoseOccupation="2" StoryStatus="1"  NowMapName ="999" NowMapPositionName ="RosePosition_1" OffGameTime ="0" AchievementTaskID="30010000" AchievementTaskValue="0,0,0" CompleteTaskID="" LearnSkillID="60030011,60030021,60030031,60030041,60030051,60030061" EquipSkillID="" EquipSuitSkillID="" LearnSkillIDSet="" EquipSkillIDSet="" SceneItemID="" PVEChapter="1;1" SpecialEventTime="0" SpecialEventOpenTime="0"/>
+</DateArea>

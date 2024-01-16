@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DateArea>
+	<date ID="1" EquipItemID="0" EquipQuality="4" EquipIcon="10002" HideID = "0"/>
+	<date ID="2" EquipItemID="0" EquipQuality="4" EquipIcon="10002" HideID = "0"/>
+	<date ID="3" EquipItemID="0" EquipQuality="4" EquipIcon="10002" HideID = "0"/>
+	<date ID="4" EquipItemID="0" EquipQuality="3" EquipIcon="10002" HideID = "0"/>
+	<date ID="5" EquipItemID="0" EquipQuality="2" EquipIcon="10002" HideID = "0"/>
+	<date ID="6" EquipItemID="0" EquipQuality="1" EquipIcon="10002" HideID = "0"/>
+	<date ID="7" EquipItemID="0" EquipQuality="3" EquipIcon="10002" HideID = "0"/>
+	<date ID="8" EquipItemID="0" EquipQuality="5" EquipIcon="10002" HideID = "0"/>
+	<date ID="9" EquipItemID="0" EquipQuality="5" EquipIcon="10002" HideID = "0"/>
+	<date ID="10" EquipItemID="0" EquipQuality="5" EquipIcon="10002" HideID = "0"/>
+	<date ID="11" EquipItemID="0" EquipQuality="5" EquipIcon="10002" HideID = "0"/>
+	<date ID="12" EquipItemID="0" EquipQuality="2" EquipIcon="10002" HideID = "0"/>
+	<date ID="13" EquipItemID="0" EquipQuality="3" EquipIcon="10002" HideID = "0"/>
+</DateArea>

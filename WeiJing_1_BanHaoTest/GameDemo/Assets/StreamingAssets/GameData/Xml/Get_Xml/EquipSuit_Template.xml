@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<DateArea>
+	<date ID="1001" Name="新兵套装" NeedEquipID="10030110;10030105;10030102" NeedEquipNum="1;1;1" SuitPropertyID="3,1001" />
+	<date ID="1101" Name="红宝石骷髅套装" NeedEquipID="10030214;10030203" NeedEquipNum="1;1" SuitPropertyID="2,1011" />
+	<date ID="1102" Name="布纹套装" NeedEquipID="10030208;10030211;10030210" NeedEquipNum="1;1;1" SuitPropertyID="2,1021;2,1022;3,1023" />
+	<date ID="1103" Name="凌风套装" NeedEquipID="10030220;10030222" NeedEquipNum="1;1" SuitPropertyID="2,1024" />
+	<date ID="1104" Name="古墓套装" NeedEquipID="10030256;10030257;10030258" NeedEquipNum="1;1;1" SuitPropertyID="3,1025" />
+	<date ID="1201" Name="血域套装" NeedEquipID="10030301;10030303" NeedEquipNum="1;1" SuitPropertyID="2,2001" />
+	<date ID="1202" Name="血域套装" NeedEquipID="10030317;10030311;10030320;10030309;10030334;10030335" NeedEquipNum="1;1;1;1;1;1" SuitPropertyID="2,2011;3,2012;4,2013;4,2014" />
+	<date ID="1203" Name="血域套装" NeedEquipID="10030305;10030307" NeedEquipNum="1;1" SuitPropertyID="2,2021" />
+	<date ID="1204" Name="血域套装" NeedEquipID="10030315;10030313;10030316" NeedEquipNum="1;1;1" SuitPropertyID="3,2031" />
+	<date ID="1205" Name="荒漠套装" NeedEquipID="10030324;10030325;10030326;10030327" NeedEquipNum="1;1;1;1" SuitPropertyID="2,2041;4,2042" />
+	<date ID="1301" Name="破灵套装" NeedEquipID="10030422;10030423" NeedEquipNum="1;1" SuitPropertyID="2,2101" />
+	<date ID="1302" Name="冰河套装" NeedEquipID="10030424;10030425;10030426" NeedEquipNum="1;1;1" SuitPropertyID="3,2102" />
+	<date ID="1303" Name="冰封套装1" NeedEquipID="10030401;10030403" NeedEquipNum="1;1" SuitPropertyID="2,2111" />
+	<date ID="1304" Name="冰封套装2" NeedEquipID="10030418;10030411;10030420;10030409;10030433;10030434" NeedEquipNum="1;1;1;1;1;1" SuitPropertyID="2,2121;3,2122;4,2123" />
+	<date ID="1305" Name="冰封套装3" NeedEquipID="10030405;10030407" NeedEquipNum="1;1" SuitPropertyID="2,2131" />
+	<date ID="1306" Name="冰封套装4" NeedEquipID="10030415;10030413;10030416" NeedEquipNum="1;1;1" SuitPropertyID="3,2141" />
+	<date ID="1401" Name="精灵套装" NeedEquipID="10030522;10030523" NeedEquipNum="1;1" SuitPropertyID="2,2201" />
+	<date ID="1402" Name="暮色套装" NeedEquipID="10030524;10030525;10030526;10030527;10030528;10030529" NeedEquipNum="1;1;1;1;1;1" SuitPropertyID="2,2211;4,2212;6,2213" />
+	<date ID="1403" Name="永恒套装1" NeedEquipID="10030501;10030503" NeedEquipNum="1;1" SuitPropertyID="2,2221" />
+	<date ID="1404" Name="永恒套装2" NeedEquipID="10030518;10030511;10030520;10030509;10030535" NeedEquipNum="1;1;1;1;1" SuitPropertyID="2,2231;3,2232;4,2233" />
+	<date ID="1405" Name="永恒套装3" NeedEquipID="10030505;10030507" NeedEquipNum="1;1" SuitPropertyID="2,2241" />
+	<date ID="1406" Name="永恒套装4" NeedEquipID="10030515;10030513;10030516;10030536" NeedEquipNum="1;1;1;1" SuitPropertyID="3,2251" />
+	<date ID="1501" Name="熔岩套装" NeedEquipID="10030622;10030623" NeedEquipNum="1;1" SuitPropertyID="2,2201" />
+	<date ID="1502" Name="炙热套装" NeedEquipID="10030624;10030625;10030626;10030627;10030628;10030629" NeedEquipNum="1;1;1;1;1;1" SuitPropertyID="2,2311;4,2312;6,2313" />
+	<date ID="1503" Name="圣光套装1" NeedEquipID="10030601;10030603" NeedEquipNum="1;1" SuitPropertyID="2,2321" />
+	<date ID="1504" Name="圣光套装2" NeedEquipID="10030618;10030611;10030620;10030609" NeedEquipNum="1;1;1;1" SuitPropertyID="2,2331;3,2332;4,2333" />
+	<date ID="1505" Name="圣光套装3" NeedEquipID="10030605;10030607" NeedEquipNum="1;1" SuitPropertyID="2,2341" />
+	<date ID="1506" Name="圣光套装4" NeedEquipID="10030615;10030613;10030616" NeedEquipNum="1;1;1" SuitPropertyID="3,2351" />
+	<date ID="1513" Name="圣光套装1" NeedEquipID="10030630;10030631" NeedEquipNum="1;1" SuitPropertyID="2,2421" />
+	<date ID="1514" Name="圣光套装2" NeedEquipID="10030639;10030635;10030640;10030634" NeedEquipNum="1;1;1;1" SuitPropertyID="2,2431;3,2432;4,2433" />
+	<date ID="1515" Name="圣光套装3" NeedEquipID="10030632;10030633" NeedEquipNum="1;1" SuitPropertyID="2,2441" />
+	<date ID="1516" Name="圣光套装4" NeedEquipID="10030637;10030636;10030638" NeedEquipNum="1;1;1" SuitPropertyID="3,2451" />
+</DateArea>
