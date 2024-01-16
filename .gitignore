@@ -40,8 +40,6 @@ _ReSharper.CSharp/
 /Unity/CSharp60Support/compilation log.txt
 /CSharp/CSharp.VC.opendb
 /Server/Server.VC.opendb
-/Server/Hotfix/Custom
-/Server/Hotfix/Module/Console/Custom
 /Log
 /Temp
 /Logs
@@ -66,6 +64,8 @@ Server/.DS_Store
 /*.user
 Unity2/
 /ToolsApp/
+/WeiJing_1_BanHaoTest/GameDemo/Library
+/WeiJing_1_BanHaoTest/GameDemo/Temp
 /Unity/HybridCLRData/
 /Unity/Assets/Res/XAsset/Rules.asset
 /Unity/Assets/Bundles/Independent
