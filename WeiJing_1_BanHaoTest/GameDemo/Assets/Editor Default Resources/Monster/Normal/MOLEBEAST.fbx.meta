@@ -1,0 +1,178 @@
+fileFormatVersion: 2
+guid: 64b383e0e1b37be49810b4f828bacfa0
+timeCreated: 1450799153
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Bip04
+    100002: Bip04_Head
+    100004: Bip04_L_Calf
+    100006: Bip04_L_Clavicle
+    100008: Bip04_L_Finger0
+    100010: Bip04_L_Finger1
+    100012: Bip04_L_Finger2
+    100014: Bip04_L_Foot
+    100016: Bip04_L_Forearm
+    100018: Bip04_L_Hand
+    100020: Bip04_L_Thigh
+    100022: Bip04_L_Toe0
+    100024: Bip04_L_Toe1
+    100026: Bip04_L_Toe2
+    100028: Bip04_L_UpperArm
+    100030: Bip04_Neck
+    100032: Bip04_Pelvis
+    100034: Bip04_Ponytail1
+    100036: Bip04_Ponytail2
+    100038: Bip04_R_Calf
+    100040: Bip04_R_Clavicle
+    100042: Bip04_R_Finger0
+    100044: Bip04_R_Finger1
+    100046: Bip04_R_Finger2
+    100048: Bip04_R_Foot
+    100050: Bip04_R_Forearm
+    100052: Bip04_R_Hand
+    100054: Bip04_R_Thigh
+    100056: Bip04_R_Toe0
+    100058: Bip04_R_Toe1
+    100060: Bip04_R_Toe2
+    100062: Bip04_R_UpperArm
+    100064: Bip04_Spine
+    100066: Bip04_Spine1
+    100068: Bip04_Xtra01
+    100070: Bip04_Xtra02
+    100072: Bip04_Xtra0202
+    100074: Bip04_Xtra0203
+    100076: //RootNode
+    100078: molebeast
+    100080: Molebeast_mat
+    100082: root
+    400000: Bip04
+    400002: Bip04_Head
+    400004: Bip04_L_Calf
+    400006: Bip04_L_Clavicle
+    400008: Bip04_L_Finger0
+    400010: Bip04_L_Finger1
+    400012: Bip04_L_Finger2
+    400014: Bip04_L_Foot
+    400016: Bip04_L_Forearm
+    400018: Bip04_L_Hand
+    400020: Bip04_L_Thigh
+    400022: Bip04_L_Toe0
+    400024: Bip04_L_Toe1
+    400026: Bip04_L_Toe2
+    400028: Bip04_L_UpperArm
+    400030: Bip04_Neck
+    400032: Bip04_Pelvis
+    400034: Bip04_Ponytail1
+    400036: Bip04_Ponytail2
+    400038: Bip04_R_Calf
+    400040: Bip04_R_Clavicle
+    400042: Bip04_R_Finger0
+    400044: Bip04_R_Finger1
+    400046: Bip04_R_Finger2
+    400048: Bip04_R_Foot
+    400050: Bip04_R_Forearm
+    400052: Bip04_R_Hand
+    400054: Bip04_R_Thigh
+    400056: Bip04_R_Toe0
+    400058: Bip04_R_Toe1
+    400060: Bip04_R_Toe2
+    400062: Bip04_R_UpperArm
+    400064: Bip04_Spine
+    400066: Bip04_Spine1
+    400068: Bip04_Xtra01
+    400070: Bip04_Xtra02
+    400072: Bip04_Xtra0202
+    400074: Bip04_Xtra0203
+    400076: //RootNode
+    400078: molebeast
+    400080: Molebeast_mat
+    400082: root
+    4300000: Molebeast_mat
+    7400000: AggWalk
+    7400002: Attack1
+    7400004: Attack2
+    7400006: Attack3
+    7400008: Attack4
+    7400010: Attack5
+    7400012: Attack6
+    7400014: Die1
+    7400016: Die2
+    7400018: Die3
+    7400020: Hit1
+    7400022: Hit2
+    7400024: Hit3
+    7400026: Idle
+    7400028: Jump_Down
+    7400030: Jump_Land
+    7400032: Run
+    7400034: Spawn1
+    7400036: Special_Breath
+    7400038: Special_Call
+    7400040: Special_Spikes
+    7400042: Walk
+    9500000: //RootNode
+    13700000: Molebeast_mat
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

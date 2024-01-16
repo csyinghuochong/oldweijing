@@ -1,0 +1,128 @@
+fileFormatVersion: 2
+guid: 703235661fee96041b1191d50733689e
+timeCreated: 1450980416
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Bip01
+    100002: Bip01_Head
+    100004: Bip01_Jaw
+    100006: Bip01_JawOpp
+    100008: Bip01_L_Clavicle
+    100010: Bip01_L_Thigh
+    100012: Bip01_L_UpperArm
+    100014: Bip01_Neck
+    100016: Bip01_Pelvis
+    100018: Bip01_R_Clavicle
+    100020: Bip01_R_Thigh
+    100022: Bip01_R_UpperArm
+    100024: Bip01_Spine
+    100026: //RootNode
+    100028: fungus_popcorn01b
+    100030: Fungus_popcorn1b_mat
+    100032: root
+    400000: Bip01
+    400002: Bip01_Head
+    400004: Bip01_Jaw
+    400006: Bip01_JawOpp
+    400008: Bip01_L_Clavicle
+    400010: Bip01_L_Thigh
+    400012: Bip01_L_UpperArm
+    400014: Bip01_Neck
+    400016: Bip01_Pelvis
+    400018: Bip01_R_Clavicle
+    400020: Bip01_R_Thigh
+    400022: Bip01_R_UpperArm
+    400024: Bip01_Spine
+    400026: //RootNode
+    400028: fungus_popcorn01b
+    400030: Fungus_popcorn1b_mat
+    400032: root
+    4300000: Fungus_popcorn1b_mat
+    7400000: attack1
+    7400002: attack2
+    7400004: death_flight
+    7400006: death_land
+    7400008: die1
+    7400010: die2
+    7400012: envi_alert5_spawn
+    7400014: envi_idle5_spawn
+    7400016: fidget1
+    7400018: hit1
+    7400020: hit2
+    7400022: idle
+    7400024: jump_down
+    7400026: jump_land
+    7400028: Jump_Up_Spawn
+    7400030: run
+    7400032: Spawn1
+    7400034: Special_Cast
+    7400036: Special_Explode
+    7400038: Special_Spores
+    7400040: stunned
+    7400042: walk
+    9500000: //RootNode
+    13700000: Fungus_popcorn1b_mat
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
