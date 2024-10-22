@@ -22,12 +22,27 @@ public class XieYiText : MonoBehaviour
     public GameObject TextYinSi;
     private bool LoadYinSi = false;
 
+    private int SetYongHu = 0;
+
     // Start is called before the first frame update
     void Start()
     {
         this.YongHuXieYi.SetActive(false);
         this.YinSiXieYi.SetActive(false);
+
     }
+
+    IEnumerator DelayedAction()
+    {
+        // 等待1秒
+        yield return new WaitForSeconds(0.2f);
+
+        // 1秒后执行的代码
+        //this.YongHuXieYi.transform.Find("Scroll View").GetComponent<ScrollRect>().normalizedPosition = new Vector2(0, 1); //.verticalNormalizedPosition = 1f;
+        //this.YongHuXieYi.transform.Find("Scroll View").GetComponent<ScrollRect>().content.localPosition = new Vector3(0f, -3691.983f, 0f);
+        this.YongHuXieYi.transform.Find("Scroll View/Scrollbar Vertical").GetComponent<Scrollbar>().value = 1f;
+    }
+
 
     public string GetYingSiText()
     {
@@ -118,6 +133,7 @@ public class XieYiText : MonoBehaviour
     {
         this.YongHuXieYi.SetActive(true);
         this.YinSiXieYi.SetActive(false);
+        StartCoroutine(DelayedAction());
     }
 
 
