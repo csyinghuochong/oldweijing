@@ -78,6 +78,7 @@ public class UI_OpenCreateRose : MonoBehaviour {
                 }
 
                 Obj_CreateRose.SetActive(true);
+                GameObject.Find("Canvas/XieYiText").gameObject.SetActive(false);
             }
         }
     }
@@ -85,6 +86,7 @@ public class UI_OpenCreateRose : MonoBehaviour {
     public void entergame()
     {
         Obj_CreateRose.SetActive(true);
+        GameObject.Find("Canvas/XieYiText").gameObject.SetActive(false);
     }
 
     public void FangChenMi()
