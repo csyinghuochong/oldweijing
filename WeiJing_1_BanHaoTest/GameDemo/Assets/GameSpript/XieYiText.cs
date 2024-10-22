@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Net;
 using System.Text;
 using UnityEngine;
+using UnityEngine.PlayerLoop;
 using UnityEngine.UI;
 using static UnityEngine.UI.CanvasScaler;
 
@@ -20,11 +21,12 @@ public class XieYiText : MonoBehaviour
     public Button YinSiXieYiClose;
 
     public GameObject TextYinSi;
+
+    public GameObject UI_YinSiXieYi;
+
     private bool LoadYinSi = false;
 
-    private int SetYongHu = 0;
-    
-
+  
     public AndroidJavaClass jc;
     public AndroidJavaObject jo;
 
@@ -48,9 +50,9 @@ public class XieYiText : MonoBehaviour
 #if UNITY_ANDROID && !UNITY_EDITOR
 		jc = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
 		jo = jc.GetStatic<AndroidJavaObject>("currentActivity");
-
-        SetIsPermissionGranted();
 #endif
+
+        this.UI_YinSiXieYi.SetActive(!PlayerPrefs.GetString(UIYinSiKey).Equals("1"));
     }
 
     /// <summary>
@@ -64,9 +66,20 @@ public class XieYiText : MonoBehaviour
 #endif
     }
 
+
+    private const string UIYinSiKey = "UIYinSi_1022";
     public void onRequestPermissionsResult(string permissons)
     {
-        
+        Debug.Log($"onRequestPermissionsResult: {permissons}");
+
+        string[] values = permissons.Split('_');
+        if (values[1] == "0")
+        {
+            Application.Quit();
+            return;
+        }
+
+        PlayerPrefs.SetString(UIYinSiKey, "1");
     }
 
 
@@ -165,6 +178,25 @@ public class XieYiText : MonoBehaviour
 
 
         }
+    }
+
+    public void OnButton_Btn_SelectTreue()
+    {
+        this.UI_YinSiXieYi.SetActive(false);
+
+        SetIsPermissionGranted();
+    }
+
+    public void OnButton_Btn_SelectFalse()
+    {
+        this.UI_YinSiXieYi.SetActive(false);
+        Application.Quit(); 
+    }
+
+    public void OnButton_Btn_Close()
+    { 
+        this.UI_YinSiXieYi.SetActive(false);
+        Application.Quit();
     }
 
     public void OnButton_TextButton_1()
