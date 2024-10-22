@@ -195,9 +195,10 @@
     <Compile Include="Assets\Resources\EffectsSharde\ImageEffects\Scripts\ScreenOverlay.cs" />
     <Compile Include="Assets\FangChenMi\YanZheng2.cs" />
     <Compile Include="Assets\GameSpript\Data\GameServerMessage.cs" />
-    <Compile Include="Assets\T4M\Scripts\T4MBillBObjSC.cs" />
+    <Compile Include="Assets\GameSpript\XieYiText.cs" />
     <Compile Include="Assets\GameSpript\UI\UI_Set.cs" />
     <Compile Include="Assets\GameSpript\AI\AIPet.cs" />
+    <Compile Include="Assets\T4M\Scripts\T4MBillBObjSC.cs" />
     <Compile Include="Assets\CodeStage\AntiCheatToolkit\Scripts\ObscuredTypes\ObscuredUInt.cs" />
     <Compile Include="Assets\Resources\EffectsSharde\ImageEffects\Scripts\BlurOptimized.cs" />
     <Compile Include="Assets\GameSpript\UI\UI_HuoDongDaTingDengLu.cs" />
@@ -335,7 +336,6 @@
     <Compile Include="Assets\GameSpript\GameEffect\Effect_Size.cs" />
     <Compile Include="Assets\Resources\EffectsSharde\ImageEffects\Scripts\Triangles.cs" />
     <Compile Include="Assets\GameSpript\UI\UI_Bag\UI_Bag.cs" />
-    <Compile Include="Assets\GameSpript\XieYiText.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\StreamingAssets\GameData\Xml\Get_Xml\HonorStore_Template.xml" />

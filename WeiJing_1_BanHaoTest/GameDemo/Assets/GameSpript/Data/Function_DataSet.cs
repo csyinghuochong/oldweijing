@@ -291,7 +291,8 @@ public class Function_DataSet{
         Debug.Log("缓存所有表成功！");
 
         //判定DataSet内的数据是否有错误
-        if (Game_PublicClassVar.Get_wwwSet.DataSetXml.HasErrors){
+        if (Game_PublicClassVar.Get_wwwSet.DataSetXml.HasErrors)
+        {
             return false;
         }
         else {

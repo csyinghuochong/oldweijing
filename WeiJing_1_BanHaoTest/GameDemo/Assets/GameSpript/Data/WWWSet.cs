@@ -481,9 +481,11 @@ public class WWWSet:MonoBehaviour{
                         Game_PublicClassVar.Get_function_DataSet.DataSet_AllReadXml();
                         IfSaveRoseData = true;      //开启储备数据
                     }
-                    catch {
+                    catch (Exception ex)
+                    {
                         IfSaveGetRoseData = true;
                         Debug.Log("账号数据异常,从备份中获取数据！");
+                        Debug.Log("账号数据异常,从备份中获取数据！" +  ex.ToString());
                         Time.timeScale = 0;
                         GameObject beifenObj = (GameObject)Instantiate(Obj_BeiFenData);
                         beifenObj.transform.SetParent(GameObject.Find("Canvas").transform);

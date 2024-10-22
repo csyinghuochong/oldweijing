@@ -23,6 +23,20 @@ public class XieYiText : MonoBehaviour
     private bool LoadYinSi = false;
 
     private int SetYongHu = 0;
+    
+
+    public AndroidJavaClass jc;
+    public AndroidJavaObject jo;
+
+    //是java里的类，一些静态方法可以直接通过这个调用。
+    //androidjavaobject 调用的话，会生成一个对象，就和java里new一个对象一样，可以通过对象去调用里面的方法以及属性。
+    public AndroidJavaClass javaClass;
+    public AndroidJavaObject javaActive;
+    //"com.mafeng.alinewsdk.AliSDKActivity"是2018.11.01日更新的版本 对应安卓工程中的alinewsdk Module
+    //而"com.mafeng.aliopensdk.AliSDKActivity"是之前的版本 对应安卓工程中的aliopensdk Module
+    public string javaClassStr = "com.example.alinewsdk.AliSDKActivity";  //"com.mafeng.aliopensdk.AliSDKActivity";
+    public string javaActiveStr = "currentActivity";
+
 
     // Start is called before the first frame update
     void Start()
@@ -30,7 +44,31 @@ public class XieYiText : MonoBehaviour
         this.YongHuXieYi.SetActive(false);
         this.YinSiXieYi.SetActive(false);
 
+
+#if UNITY_ANDROID && !UNITY_EDITOR
+		jc = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
+		jo = jc.GetStatic<AndroidJavaObject>("currentActivity");
+
+        SetIsPermissionGranted();
+#endif
     }
+
+    /// <summary>
+    /// 调用位置开发者可以自己指定，只需在使用SDK功能之前调用即可，
+    /// 强烈建议开发者在终端用户点击应用隐私协议弹窗同意按钮后调用。
+    /// </summary>
+    public void SetIsPermissionGranted()
+    {
+#if UNITY_ANDROID && !UNITY_EDITOR
+			jo.Call("QuDaoRequestPermissions");
+#endif
+    }
+
+    public void onRequestPermissionsResult(string permissons)
+    {
+        
+    }
+
 
     IEnumerator DelayedAction()
     {
