@@ -102,7 +102,7 @@ public class XieYiText : MonoBehaviour
 
                 text.text = lineStr;
 
-                text.GetComponent<RectTransform>().sizeDelta = new Vector2(1400, text.preferredHeight);
+                text.GetComponent<RectTransform>().sizeDelta = new Vector2(1080, text.preferredHeight);
 
                 text.gameObject.SetActive(false);
                 text.gameObject.SetActive(true);
