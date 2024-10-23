@@ -63,6 +63,8 @@ public class XieYiText : MonoBehaviour
     {
 #if UNITY_ANDROID && !UNITY_EDITOR
 			jo.Call("QuDaoRequestPermissions");
+#else
+        onRequestPermissionsResult("1_1");
 #endif
     }
 
