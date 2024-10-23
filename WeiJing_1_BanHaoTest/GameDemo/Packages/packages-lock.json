@@ -1,5 +1,19 @@
 {
   "dependencies": {
+    "com.leancloud.realtime": {
+      "version": "file:com.leancloud.realtime@73c70db9d8",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "com.leancloud.storage": "https://github.com/leancloud/csharp-sdk-upm.git#storage-1.0.2"
+      }
+    },
+    "com.leancloud.storage": {
+      "version": "file:com.leancloud.storage@beef2954fb",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
     "com.unity.2d.sprite": {
       "version": "1.0.0",
       "depth": 0,

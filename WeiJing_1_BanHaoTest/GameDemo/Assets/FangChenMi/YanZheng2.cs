@@ -7,8 +7,10 @@ using System.Net.Security;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using UnityEngine;
-using Newtonsoft.Json;
+using LC.Newtonsoft.Json;
 using UnityEngine.UI;
+
+
 public class YanZheng2 : MonoBehaviour {
 
     private const String host = "https://naidcard.market.alicloudapi.com";
@@ -19,7 +21,7 @@ public class YanZheng2 : MonoBehaviour {
     // Use this for initialization
     void Start () {
 
-        //YanZhengShenFen("贺松年", "37068219921211861X");
+        //YanZhengShenFen("贺松年", "37068219921211861X"); 
     }
 
     // Update is called once per frame
@@ -81,7 +83,7 @@ public class YanZheng2 : MonoBehaviour {
         //测试解析
 
         string xinxi = reader.ReadToEnd().ToString();
-        Newtonsoft.Json.Linq.JArray jsonArr = GetToJsonList("["+ xinxi + "]");
+        LC.Newtonsoft.Json.Linq.JArray jsonArr = GetToJsonList("["+ xinxi + "]");
         string status = jsonArr[0]["status"].ToString();
         //Debug.Log("status = " + status);
 
@@ -110,9 +112,9 @@ public class YanZheng2 : MonoBehaviour {
         return true;
     }
 
-    public static Newtonsoft.Json.Linq.JArray GetToJsonList(string json)
+    public static LC.Newtonsoft.Json.Linq.JArray GetToJsonList(string json)
     {
-        Newtonsoft.Json.Linq.JArray jsonArr = (Newtonsoft.Json.Linq.JArray)JsonConvert.DeserializeObject(json);
+        LC.Newtonsoft.Json.Linq.JArray jsonArr = (LC.Newtonsoft.Json.Linq.JArray)JsonConvert.DeserializeObject(json);
         return jsonArr;
     }
 

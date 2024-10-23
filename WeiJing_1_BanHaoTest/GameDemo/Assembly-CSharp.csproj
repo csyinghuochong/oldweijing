@@ -531,7 +531,6 @@
     <None Include="Assets\T4M\Shaders\ShaderModel3\Bump\T4M 2 TexturesBump.shader" />
     <None Include="Assets\StreamingAssets\GameData\XmlSS\Get_Xml\Equip_Template.xml" />
     <None Include="Assets\T4M\Shaders\ShaderModel2\Bump\T4M 3 TexturesBumped Mobile.shader" />
-    <None Include="Assets\FangChenMi\Newtonsoft.Json.dll" />
     <None Include="Assets\Resources\EffectsSharde\ImageEffects\Shaders\_DepthOfField\DepthOfFieldDX11.shader" />
     <None Include="Assets\T4M\Shaders\ShaderModel1\T4M 2 Textures Auto BeastLM 2DrawCall.shader" />
     <None Include="Assets\StreamingAssets\GameData\XmlSS\Get_Xml\Task_Template.xml" />
@@ -807,11 +806,29 @@
     <Reference Include="Unity.Analytics.Editor">
       <HintPath>Library\PackageCache\com.unity.analytics@3.6.12\Unity.Analytics.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>Assets\FangChenMi\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Analytics.Tracker">
       <HintPath>Library\PackageCache\com.unity.analytics@3.6.12\Unity.Analytics.Tracker.dll</HintPath>
+    </Reference>
+    <Reference Include="LC.Newtonsoft.Json">
+      <HintPath>Packages\com.leancloud.storage@beef2954fb\Plugins\LC.Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Storage">
+      <HintPath>Packages\com.leancloud.storage@beef2954fb\Plugins\Storage.dll</HintPath>
+    </Reference>
+    <Reference Include="Realtime">
+      <HintPath>Packages\com.leancloud.realtime@73c70db9d8\Plugins\Realtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Common">
+      <HintPath>Packages\com.leancloud.storage@beef2954fb\Plugins\Common.dll</HintPath>
+    </Reference>
+    <Reference Include="LC.Google.Protobuf">
+      <HintPath>Packages\com.leancloud.realtime@73c70db9d8\Plugins\LC.Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveQuery">
+      <HintPath>Packages\com.leancloud.realtime@73c70db9d8\Plugins\LiveQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="Storage.Unity">
+      <HintPath>Packages\com.leancloud.storage@beef2954fb\Plugins\Storage.Unity.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>D:\unityhub\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\mscorlib.dll</HintPath>
