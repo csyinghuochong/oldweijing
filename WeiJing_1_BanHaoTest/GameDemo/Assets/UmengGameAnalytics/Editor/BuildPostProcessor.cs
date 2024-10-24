@@ -35,7 +35,7 @@ public class BuildPostProcessor
 			string projectPath = PBXProject.GetPBXProjectPath(path);
 			PBXProject project = new PBXProject();
 			project.ReadFromString(File.ReadAllText(projectPath));
-			string targetName = PBXProject.GetUnityTargetName();
+			string targetName = project.GetUnityFrameworkTargetGuid();
 			string targetGUID = project.TargetGuidByName(targetName);
 
 			AddFrameworks(project, targetGUID);
@@ -49,9 +49,9 @@ public class BuildPostProcessor
 	{
 		// Frameworks 
 
-		project.AddFrameworkToProject(targetGUID, "libz.dylib", false);
-		project.AddFrameworkToProject(targetGUID, "libsqlite3.tbd", false);
-        project.AddFrameworkToProject(targetGUID, "CoreTelephony.framework", false);
+		//project.AddFrameworkToProject(targetGUID, "libz.dylib", false);
+		//project.AddFrameworkToProject(targetGUID, "libsqlite3.tbd", false);
+        //project.AddFrameworkToProject(targetGUID, "CoreTelephony.framework", false);
 
 
     }
