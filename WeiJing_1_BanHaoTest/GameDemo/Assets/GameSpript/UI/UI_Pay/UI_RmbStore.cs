@@ -24,25 +24,12 @@ public class UI_RmbStore : MonoBehaviour {
     public GameObject Obj_ImgWeiXin;
     public GameObject Obj_WeiXinChaJianHint;        //微信插件文字提示
 
-
-    [DllImport("__Internal")]
-    private static extern void InitIAPManager();//初始化
-
-    [DllImport("__Internal")]
-    private static extern bool IsProductAvailable();//判断是否可以购买
-
-    [DllImport("__Internal")]
-    private static extern void RequstProductInfo(string s);//获取商品信息
-
-    [DllImport("__Internal")]
-    private static extern void BuyProduct(string s);//购买商品
-
 	// Use this for initialization
 	void Start () {
 
 #if UNITY_IPHONE
         //初始化
-        InitIAPManager();
+        
 #endif
 
         int zuanShi = Game_PublicClassVar.Get_function_Rose.GetRoseRMB();
@@ -293,7 +280,7 @@ public class UI_RmbStore : MonoBehaviour {
 
         //ios付费
 #if UNITY_IPHONE
-        BuyProduct(rmbPayValue + "R");
+
 #endif
 
         //安卓付费
