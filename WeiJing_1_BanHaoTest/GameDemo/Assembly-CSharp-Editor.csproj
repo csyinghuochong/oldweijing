@@ -343,9 +343,6 @@
     <Reference Include="Unity.Analytics.Editor">
       <HintPath>Library\PackageCache\com.unity.analytics@3.6.12\Unity.Analytics.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>Assets\FangChenMi\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Plastic.Antlr3.Runtime">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
     </Reference>
@@ -357,6 +354,27 @@
     </Reference>
     <Reference Include="SyntaxTree.VisualStudio.Unity.Messaging">
       <HintPath>Assets\UnityVS\Editor\SyntaxTree.VisualStudio.Unity.Messaging.dll</HintPath>
+    </Reference>
+    <Reference Include="LC.Newtonsoft.Json">
+      <HintPath>Packages\com.leancloud.storage@beef2954fb\Plugins\LC.Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Storage">
+      <HintPath>Packages\com.leancloud.storage@beef2954fb\Plugins\Storage.dll</HintPath>
+    </Reference>
+    <Reference Include="Realtime">
+      <HintPath>Packages\com.leancloud.realtime@73c70db9d8\Plugins\Realtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Common">
+      <HintPath>Packages\com.leancloud.storage@beef2954fb\Plugins\Common.dll</HintPath>
+    </Reference>
+    <Reference Include="LC.Google.Protobuf">
+      <HintPath>Packages\com.leancloud.realtime@73c70db9d8\Plugins\LC.Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveQuery">
+      <HintPath>Packages\com.leancloud.realtime@73c70db9d8\Plugins\LiveQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="Storage.Unity">
+      <HintPath>Packages\com.leancloud.storage@beef2954fb\Plugins\Storage.Unity.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
