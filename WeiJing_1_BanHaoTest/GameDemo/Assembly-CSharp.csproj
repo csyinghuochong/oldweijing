@@ -336,6 +336,7 @@
     <Compile Include="Assets\GameSpript\GameEffect\Effect_Size.cs" />
     <Compile Include="Assets\Resources\EffectsSharde\ImageEffects\Scripts\Triangles.cs" />
     <Compile Include="Assets\GameSpript\UI\UI_Bag\UI_Bag.cs" />
+    <Compile Include="Assets\UmengAllinOneDemo\Entry.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\StreamingAssets\GameData\Xml\Get_Xml\HonorStore_Template.xml" />

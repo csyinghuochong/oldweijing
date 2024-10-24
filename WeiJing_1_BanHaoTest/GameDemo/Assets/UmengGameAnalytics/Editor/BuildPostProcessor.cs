@@ -11,11 +11,15 @@
 // OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 //
 
+#if UNITY_IOS || UNITY_TVOS
+
 using System.IO;
 using UnityEngine;
 using UnityEditor;
 using UnityEditor.Callbacks;
-//using UnityEditor.iOS.Xcode;
+
+
+using UnityEditor.iOS.Xcode;
 
 
 public class BuildPostProcessor
@@ -28,7 +32,6 @@ public class BuildPostProcessor
 		if (target == BuildTarget.iOS)
 		{
 			// Read.
-            /*
 			string projectPath = PBXProject.GetPBXProjectPath(path);
 			PBXProject project = new PBXProject();
 			project.ReadFromString(File.ReadAllText(projectPath));
@@ -39,11 +42,9 @@ public class BuildPostProcessor
 
 			// Write.
 			File.WriteAllText(projectPath, project.WriteToString());
-            */
 		}
 	}
 
-    /*
 	static void AddFrameworks(PBXProject project, string targetGUID)
 	{
 		// Frameworks 
@@ -54,5 +55,6 @@ public class BuildPostProcessor
 
 
     }
-    */
 }
+
+#endif
