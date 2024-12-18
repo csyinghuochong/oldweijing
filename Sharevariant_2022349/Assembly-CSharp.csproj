@@ -120,6 +120,7 @@
     <None Include="Assets\SharedAssets\Benchmark\BenchmarkUI.uss" />
     <None Include="Assets\SharedAssets\TextMeshPro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\SharedAssets\TextMeshPro\Shaders\TMP_SDF-SSD.shader" />
+    <None Include="Assets\Suntail_Water.shader" />
     <None Include="Assets\SharedAssets\Benchmark\TestData.uxml" />
     <None Include="Assets\SharedAssets\Shaders\HLSL\CustomFunctionNodes.hlsl" />
     <None Include="Assets\SharedAssets\TextMeshPro\Shaders\TMP_SDF-Surface-Mobile.shader" />

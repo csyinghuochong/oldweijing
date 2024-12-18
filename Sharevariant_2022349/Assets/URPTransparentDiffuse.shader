@@ -27,8 +27,11 @@ Shader "Custom/URPTransparentDiffuse"
             #include "UnityCG.cginc"
 
             //根据对应的开关 来定义用于shader变种的预编译 条件（大写加_ON）
-            #pragma shader_feature _MASKENABLE_ON
-
+            //#pragma shader_feature _MASKENABLE_ON
+            //要生成未定义预处理器宏的着色器变体，请添加一个仅为下划线（__）的名称。这是避免使用两个宏的常用技术，因为对项目中可以使用的宏数量有限制，例如：
+            #pragma multi_compile __ _MASKENABLE_ON
+            #pragma multi_compile TEST_1 TEST_2
+            
             struct appdata_t
             {
                 float4 vertex : POSITION;
