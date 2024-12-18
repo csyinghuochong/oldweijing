@@ -54,6 +54,7 @@
     <Compile Include="Assets\SocoTools\SocoShaderVariantsCollection\Editor\MaterialCollection\MaterialCollection_SceneDependency.cs" />
     <Compile Include="Assets\SocoTools\SocoShaderVariantsStripper\Editor\ShaderVariantsStripperCode.cs" />
     <Compile Include="Assets\SocoTools\SocoShaderVariantsCollection\Editor\MaterialFilter\IMaterialFilter.cs" />
+    <Compile Include="Assets\SocoTools\SocoShaderVariantsCollection\Editor\MaterialCollection\MaterialCollection_DependRes.cs" />
     <Compile Include="Assets\SharedAssets\Scripts\Editor\HeightMapRenderer.cs" />
     <Compile Include="Assets\SocoTools\SocoShaderVariantsCollection\Editor\ShaderVariantCollectionAddVariantWindow.cs" />
     <Compile Include="Assets\SocoTools\SocoShaderVariantsCollection\Editor\Executable\InvalidVariantStrip.cs" />

@@ -4,6 +4,10 @@ Shader "Custom/URPTransparentDiffuse"
     {
         _MainTex ("Base (RGB)", 2D) = "white" {}
         _Color ("Main Color", Color) = (1,1,1,1)
+        
+        [Header(Mask)]
+        //用一个开关来控制 shader 的变种，即效果就是控制 遮罩效果的是否生效
+        [Toggle]_MaskEnable("Mask Enabled",int) = 0
     }
     SubShader
     {
@@ -17,11 +21,13 @@ Shader "Custom/URPTransparentDiffuse"
             Cull Off
             ZWrite Off
             Blend SrcAlpha OneMinusSrcAlpha
-
             HLSLPROGRAM
             #pragma vertex vert
             #pragma fragment frag
             #include "UnityCG.cginc"
+
+            //根据对应的开关 来定义用于shader变种的预编译 条件（大写加_ON）
+            #pragma shader_feature _MASKENABLE_ON
 
             struct appdata_t
             {
@@ -62,6 +68,11 @@ Shader "Custom/URPTransparentDiffuse"
                 // Lambertian lighting
                 half diff = max(0, dot(worldNormal, worldLightDir));
 
+                 #if _MASKENABLE_ON
+                    diff = 1;
+                #endif
+
+                
                 half4 finalColor = texColor * _Color;
                 finalColor.rgb *= ambient + diff;
 

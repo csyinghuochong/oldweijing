@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!200 &20000000
+ShaderVariantCollection:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: NewShaderVariants
+  m_Shaders:
+  - first: {fileID: -6465566751694194690, guid: 3bb35f7f86ffc45c2aa6fc4291f787fc, type: 3}
+    second:
+      variants:
+      - keywords: _SHADING_STYLE_HAIR_AND_METAL
+        passType: 0
+      - keywords: _SHADING_STYLE_SKIN_AND_TEXTILES
+        passType: 0
+      - keywords: _SHADING_STYLE_HAIR_AND_METAL
+        passType: 8
+      - keywords: _SHADING_STYLE_SKIN_AND_TEXTILES
+        passType: 8
+      - keywords: _SHADING_STYLE_HAIR_AND_METAL
+        passType: 13
+      - keywords: _SHADING_STYLE_SKIN_AND_TEXTILES
+        passType: 13

@@ -123,7 +123,7 @@
     <None Include="Assets\SharedAssets\Benchmark\TestData.uxml" />
     <None Include="Assets\SharedAssets\Shaders\HLSL\CustomFunctionNodes.hlsl" />
     <None Include="Assets\SharedAssets\TextMeshPro\Shaders\TMP_SDF-Surface-Mobile.shader" />
-    <None Include="Assets\Res\Shader\URPTransparentDiffuse.shader" />
+    <None Include="Assets\URPTransparentDiffuse.shader" />
     <None Include="Assets\SharedAssets\Shaders\HLSL\Water.hlsl" />
     <None Include="Assets\SharedAssets\TextMeshPro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\SharedAssets\TextMeshPro\Sprites\EmojiOne_Attribution.txt" />
