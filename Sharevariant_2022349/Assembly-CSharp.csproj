@@ -279,6 +279,7 @@
     <Compile Include="Assets\SharedAssets\Scripts\Runtime\ScreenController.cs" />
     <None Include="Assets\Res\Effect\EffectResSet\Effect2\E3D-RenderCore\Shader\ShaderB\E3D-distortion.shader" />
     <None Include="Assets\SharedAssets\TextMeshPro\Shaders\TMPro.cginc" />
+    <None Include="Assets\time_listshow2.txt" />
     <None Include="Assets\SharedAssets\TextMeshPro\Shaders\TMP_SDF-Mobile-Overlay.shader" />
     <None Include="Assets\Res\Effect\SkillZhiShi\Effect\Shader\Particle Alpha Blend1.shader" />
     <None Include="Assets\SharedAssets\TextMeshPro\Shaders\TMP_Bitmap.shader" />
