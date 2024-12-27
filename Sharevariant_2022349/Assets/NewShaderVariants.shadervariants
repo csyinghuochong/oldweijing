@@ -19,9 +19,15 @@ ShaderVariantCollection:
         passType: 8
       - keywords: _SHADING_STYLE_SKIN_AND_TEXTILES
         passType: 8
+      - keywords: _SHADING_STYLE_HAIR_AND_METAL
+        passType: 13
+      - keywords: _SHADING_STYLE_SKIN_AND_TEXTILES
+        passType: 13
   - first: {fileID: 4800000, guid: f616c47fe26d3e54f9249d3e7db2ba5b, type: 3}
     second:
       variants:
+      - keywords: 
+        passType: 1
       - keywords: 
         passType: 2
       - keywords: 
@@ -30,6 +36,10 @@ ShaderVariantCollection:
         passType: 5
       - keywords: 
         passType: 11
+      - keywords: 
+        passType: 13
   - first: {fileID: 4800000, guid: 35e513c05d70d5b4e923d7bd37975b36, type: 3}
     second:
-      variants: []
+      variants:
+      - keywords: 
+        passType: 13
