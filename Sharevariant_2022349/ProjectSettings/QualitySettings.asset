@@ -4,7 +4,7 @@
 QualitySettings:
   m_ObjectHideFlags: 0
   serializedVersion: 5
-  m_CurrentQuality: 3
+  m_CurrentQuality: 0
   m_QualitySettings:
   - serializedVersion: 3
     name: Mobile Low
@@ -56,7 +56,6 @@ QualitySettings:
     terrainMaxTrees: 50
     excludedTargetPlatforms:
     - Nintendo Switch
-    - Standalone
     - Android
     - iPhone
     - PS4
@@ -119,6 +118,7 @@ QualitySettings:
     - GameCoreXboxOne
     - GameCoreScarlett
     - Windows Store Apps
+    - Server
   - serializedVersion: 3
     name: PC Low
     pixelLightCount: 2
@@ -177,6 +177,7 @@ QualitySettings:
     - PS5
     - GameCoreScarlett
     - Windows Store Apps
+    - Server
   - serializedVersion: 3
     name: PC High
     pixelLightCount: 2
@@ -229,6 +230,8 @@ QualitySettings:
     - Android
     - Nintendo Switch
     - iPhone
+    - Server
+    - Standalone
   m_TextureMipmapLimitGroupNames: []
   m_PerPlatformDefaultQuality:
     Android: 1
@@ -240,7 +243,7 @@ QualitySettings:
     PS5: 3
     Server: 0
     Stadia: 0
-    Standalone: 3
+    Standalone: 0
     WebGL: 0
     Windows Store Apps: 3
     XboxOne: 0
