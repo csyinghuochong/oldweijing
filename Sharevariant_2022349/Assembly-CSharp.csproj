@@ -356,6 +356,7 @@
     <None Include="Assets\SharedAssets\Shaders\HLSL\CustomLighting.hlsl" />
     <None Include="Assets\Res\Effect\EffectResSet\Effect\E3D-RenderCore\E3D-Effect-Shader\AirDistort\E3D-AirDistort-AutoNoise-Mask.shader" />
     <None Include="Assets\SharedAssets\TextMeshPro\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\time_listshow.txt" />
     <None Include="Assets\Mono\GameDemo\ArtResource\Shaders\Mobile-Particle-Add-Top.shader" />
     <None Include="Assets\SharedAssets\TextMeshPro\Sprites\EmojiOne.json" />
     <None Include="Assets\SharedAssets\TextMeshPro\Shaders\TMP_Sprite.shader" />
