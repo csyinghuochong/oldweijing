@@ -16,7 +16,6 @@ Shader "Universal Render Pipeline/Transparent/DiffuseDetachAlpha" {
             #pragma target 2.0
 
             #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl"
-            #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Lighting.hlsl"
 
             TEXTURE2D(_MainTexLM);
             SAMPLER(sampler_MainTexLM);
