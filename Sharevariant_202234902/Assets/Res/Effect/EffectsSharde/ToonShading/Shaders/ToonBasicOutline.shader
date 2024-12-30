@@ -27,7 +27,7 @@ Shader "Toon/BasicOutline"
             }
 
             //Pass: 这个 Pass 定义了物体的基本渲染。首先设定名称为 MainPass，并为 UniversalForward 渲染模式，这对应于 URP 的前向渲染模式。
-
+            //‌Less‌：只有当物体的深度值小于当前像素的深度值时，才通过深度测试。
             HLSLPROGRAM
             #pragma prefer_hlslcc gles
             #pragma exclude_renderers d3d11_9x
