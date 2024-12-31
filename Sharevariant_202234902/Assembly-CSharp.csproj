@@ -86,6 +86,7 @@
     <None Include="Assets\Res\Shaders\SimpleAlpha.shader" />
     <None Include="Assets\Res\Shaders\E3DEffect-C2-Blend-Glow.shader" />
     <None Include="Assets\Res\Shaders\OutlineMask.shader" />
+    <None Include="Assets\Res\Shaders\Blend_CenterGlow_Test1.shader" />
     <None Include="Assets\Res\Shaders\SoftMaskETC1.shader" />
     <None Include="Assets\Res\Shaders\BK_Water.shader" />
     <None Include="Assets\Res\Shaders\Particle Alpha Blend DetachAlpha Top.shader" />
@@ -103,6 +104,7 @@
     <None Include="Assets\Res\Shaders\PA_Wingflap.shader" />
     <None Include="Assets\Res\Shaders\BK_StandardLayer.shader" />
     <None Include="Assets\Res\Shaders\TestSurfaceShader.shader" />
+    <None Include="Assets\Res\Shaders\Blend_CenterGlow_Test2.shader" />
     <None Include="Assets\Res\Shaders\TFD_CustomBackground.shader" />
     <None Include="Assets\Res\Shaders\Dreamscape_Waterfall.shader" />
     <None Include="Assets\Res\Shaders\Mobile-Particle-Add-Top.shader" />

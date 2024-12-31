@@ -20,8 +20,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: NewMaterial0001
-  m_Shader: {fileID: 4800000, guid: b527082748a6c054c8e145a1c8282e11, type: 3}
+  m_Name: NewMaterial0002
+  m_Shader: {fileID: 4800000, guid: 364363e2f4cd04546a27a784c13626e7, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -47,10 +47,6 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
         m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _Cartoon:
-        m_Texture: {fileID: 2800000, guid: e30dd834fc0577c41b978dbbd3e7e721, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _CoverageAlbedo:
