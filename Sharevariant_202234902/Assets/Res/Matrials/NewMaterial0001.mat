@@ -21,7 +21,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: NewMaterial0001
-  m_Shader: {fileID: 4800000, guid: 3897cb02d993e124288f000086b1903d, type: 3}
+  m_Shader: {fileID: 4800000, guid: 709587fb340fba54896fee6b4a94d9d6, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -195,6 +195,7 @@ Material:
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
     - _DissolveAmount: 0.3801628
+    - _DistortionPower: 0.05
     - _Distortionpower: 0.05
     - _DstBlend: 0
     - _DstBlendAlpha: 0
@@ -205,7 +206,7 @@ Material:
     - _Glossiness: 0
     - _GlossyReflections: 0
     - _GuideAdjuster: 1
-    - _InvFade: 0.883
+    - _InvFade: 0.789
     - _Metallic: 0
     - _MetallicValue: 0
     - _OcclusionStrength: 1

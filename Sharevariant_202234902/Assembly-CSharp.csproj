@@ -51,6 +51,7 @@
     <None Include="Assets\Res\Shaders\Mobile-Particle-Add-DetachAlpha-Top.shader" />
     <None Include="Assets\Res\Shaders\Explosion_lab.shader" />
     <None Include="Assets\Res\Shaders\Highlight.shader" />
+    <None Include="Assets\Res\Shaders\Distortion_Test1.shader" />
     <None Include="Assets\Res\Shaders\PA_Grass.shader" />
     <None Include="Assets\Res\Shaders\effect_uv_base_mask.shader" />
     <None Include="Assets\Res\Shaders\ProjectorLight.shader" />
