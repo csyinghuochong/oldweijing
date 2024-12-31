@@ -1,5 +1,7 @@
 ﻿Shader "Custom/Cartoon/Vertex/TexturedAddURP"
-{
+{//这个着色器是一个基于 Unity Universal Render Pipeline (URP) 的卡通效果着色器，使用了自定义的顶点和片段着色器来实现效果。
+    
+    
     Properties
     {
         _MainTex ("Base (RGB)", 2D) = "white" {}
