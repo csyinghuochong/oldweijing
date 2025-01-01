@@ -148,6 +148,7 @@
     <None Include="Assets\Res\Shaders\PA_OtherFoliage.shader" />
     <None Include="Assets\Res\Shaders\Unitychan_chara_hada_blend.shader" />
     <None Include="Assets\Res\Shaders\Normal-Diffuse-Linear.shader" />
+    <None Include="Assets\Res\Shaders\Distortion_Test1_URP.shader" />
     <None Include="Assets\Res\Shaders\PA_CloudCard.shader" />
     <None Include="Assets\Res\Shaders\Highlands_Background_Objects.shader" />
     <None Include="Assets\Res\Shaders\AlphaTest-Diffuse-DetachAlpha-Top.shader" />
