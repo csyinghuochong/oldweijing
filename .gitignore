@@ -68,6 +68,8 @@ Unity2/
 /WeiJing_1_BanHaoTest/GameDemo/Temp
 /WeiJing_1_BanHaoTest/GameDemo/Logs
 /WeiJing_1_BanHaoTest/GameDemo/Assets/UnityVS
+/WeiJing_1_BanHaoTest/GameDemo/Assets/TestScene
+/WeiJing_1_BanHaoTest/GameDemoTest
 /Unity/HybridCLRData/
 /Unity/Assets/Res/XAsset/Rules.asset
 /Unity/Assets/Bundles/Independent
@@ -145,3 +147,4 @@ Sharevariant_202234902/Library
 Sharevariant_202234902/Packages
 Sharevariant_202234902/Logs
 Sharevariant_202234902/UserSettings
+WeiJing_1_BanHaoTest/GameDemo/Assets/TestScene.meta
