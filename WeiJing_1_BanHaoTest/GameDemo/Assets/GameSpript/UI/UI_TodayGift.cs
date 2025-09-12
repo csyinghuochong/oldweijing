@@ -17,9 +17,8 @@ public class UI_TodayGift : MonoBehaviour
     public void Set()
     {
         Game_PublicClassVar.Get_function_UI.DestoryTargetObj(Obj_RewardItemObjSet);
-
-        // 先暂时用月卡的奖励
-        string[] rewardStr = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("Value", "ID", "YueKaReward", "GameMainValue").Split(';');
+        
+        string[] rewardStr = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("Value", "ID", "TodayGiftReward", "GameMainValue").Split(';');
         
         //显示奖励
         for (int i = 0; i <= rewardStr.Length - 1; i++)
@@ -42,7 +41,7 @@ public class UI_TodayGift : MonoBehaviour
             return;
         }
         
-        string[] rewardStr = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("Value", "ID", "YueKaReward", "GameMainValue").Split(';');
+        string[] rewardStr = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("Value", "ID", "TodayGiftReward", "GameMainValue").Split(';');
         //检测背包格子
         if (Game_PublicClassVar.Get_function_Rose.IfBagNullNum(rewardStr.Length))
         {
@@ -58,7 +57,7 @@ public class UI_TodayGift : MonoBehaviour
     // 观看完成后的回调
     private void OnRewardArrived(bool isRewardValid, int rewardType, IRewardBundleModel extraInfo)
     {
-        string[] rewardStr = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("Value", "ID", "YueKaReward", "GameMainValue").Split(';');
+        string[] rewardStr = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("Value", "ID", "TodayGiftReward", "GameMainValue").Split(';');
         
         // 记录领取
         Game_PublicClassVar.Get_function_DataSet.DataSet_WriteData("TodayGiftStatus", "1", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseData");
