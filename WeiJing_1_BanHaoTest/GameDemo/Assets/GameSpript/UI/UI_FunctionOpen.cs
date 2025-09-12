@@ -31,6 +31,10 @@ public class UI_FunctionOpen : MonoBehaviour {
     public bool RoseHuoDongDaTing_Status;   //活动大厅状态
     public GameObject Obj_HuoDongDaTing;    //活动大厅
     private GameObject obj_RoseHuoDongDaTing;   //活动大厅实例化
+    
+    public bool RoseTodayGift_Status;   //今日礼包状态
+    public GameObject Obj_TodayGift;    //今日礼包
+    private GameObject obj_RoseTodayGift;   //今日礼包实例化
 
     public bool RoseMap_Status;             //小地图打开状态
     public GameObject Obj_Map;              //小地图源
@@ -286,6 +290,29 @@ public class UI_FunctionOpen : MonoBehaviour {
             Destroy(obj_RoseHuoDongDaTing);
             RoseHuoDongDaTing_Status = false;
         }
+    }
+
+    // 今日礼包 看广告
+    public void Open_TodayGift()
+    {
+	    if (!RoseTodayGift_Status)
+	    {
+		    //载入背包UI
+		    RoseTodayGift_Status = true;
+		    obj_RoseTodayGift = (GameObject)Instantiate(Obj_TodayGift);
+		    Debug.Log("我点击了分享按钮1111");
+		    obj_RoseTodayGift.transform.SetParent(Game_PublicClassVar.Get_game_PositionVar.OBJ_UI_Set.GetComponent<UI_Set>().Obj_BuildingMainUISet_2.transform);
+		    obj_RoseTodayGift.transform.localScale = new Vector3(1, 1, 1);
+		    obj_RoseTodayGift.GetComponent<RectTransform>().anchoredPosition3D = new Vector3(0, 0, 0);
+		    obj_RoseTodayGift.GetComponent<RectTransform>().offsetMin = new Vector2(0.0f, 0.0f);
+		    obj_RoseTodayGift.GetComponent<RectTransform>().offsetMax = new Vector2(0.0f, 0.0f);
+		    playUISource_Open();    //播放音效
+	    }
+	    else {
+		    playUISource_Close();   //播放音效
+		    Destroy(obj_RoseTodayGift);
+		    RoseTodayGift_Status = false;
+	    }
     }
 
     //隐藏功能按钮

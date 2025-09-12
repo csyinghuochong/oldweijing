@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Threading;
 using ByteDance.Union;
 using ByteDance.Union.Mediation;
@@ -6,7 +7,7 @@ using UnityEngine;
 
 public class AdManager: MonoBehaviour
 {
-    // public static AdManager Instance;
+    public static AdManager Instance;
     
     public NativeAd bannerAd;                    // 自渲染banner，仅支持csj。推荐使用ExpressBannerAd
     public ExpressBannerAd mExpressBannerAd;     // 模板banner，支持csj和融合
@@ -16,6 +17,7 @@ public class AdManager: MonoBehaviour
     public DrawFeedAd drawFeedAd;                // drawFeed，仅支持融合
     public FullScreenVideoAd fullScreenVideoAd;  // 插全屏和新插屏，支持csj和融合
     public RewardVideoAd rewardAd;               // 激励视频，支持csj和融合
+    public Action<bool, int, IRewardBundleModel> RewardVideoAd_OnRewardArrived;
 
     // Unity 主线程ID:
     public static int MainThreadId;
@@ -27,17 +29,17 @@ public class AdManager: MonoBehaviour
     private void Awake()
     {
         // 处理重复创建的情况
-        // if (Instance != null && Instance != this)
-        // {
-        //     Destroy(gameObject);
-        //     return;
-        // }
-        //
-        // Instance = this;
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        
+        Instance = this;
         
         MainThreadId = Thread.CurrentThread.ManagedThreadId;
         
-        // DontDestroyOnLoad(gameObject);
+        DontDestroyOnLoad(gameObject);
     }
     
     private void SdkInitCallback(bool success, string message)

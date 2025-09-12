@@ -27,10 +27,10 @@ public class ExampleRewardAd
         // 创造广告参数对象
         var adSlot = new AdSlot.Builder()
             .SetCodeId(codeId) // 必传
-            .SetUserID("user123") // 用户id,必传参数
+            .SetUserID(Game_PublicClassVar.Get_wwwSet.RoseID) // 用户id,必传参数
             .SetOrientation(AdOrientation.Horizontal) // 必填参数，期望视频的播放方向
-            .SetRewardName("银币") // 可选
-            .SetRewardAmount(777) // 可选
+            // .SetRewardName("银币") // 可选
+            // .SetRewardAmount(777) // 可选
             .SetMediaExtra("media_extra") //⚠️设置透传信息(穿山甲广告 或 聚合维度iOS广告时)，需可序列化
             .SetMediationAdSlot(
                 new MediationAdSlot.Builder()
@@ -38,9 +38,9 @@ public class ExampleRewardAd
                     .SetExtraObject(AdConst.KEY_GROMORE_EXTRA, "gromore-server-reward-extra-unity") // 可选，设置gromore服务端验证的透传参数
                     .SetExtraObject("pangle", "pangleCustomData") // 可选，不是gromore服务端验证时，用于各个adn的参数透传
 #endif
-                    .SetScenarioId("reward-m-scenarioId") // 可选
-                    .SetBidNotify(true) // 可选
-                    .SetUseSurfaceView(false) // 可选
+                    // .SetScenarioId("reward-m-scenarioId") // 可选
+                    // .SetBidNotify(true) // 可选
+                    // .SetUseSurfaceView(false) // 可选
                     .Build()
                     )
             
@@ -160,6 +160,12 @@ public class ExampleRewardAd
             var logString = "OnRewardArrived verify:" + isRewardValid + " rewardType:" + rewardType + " extraInfo: " + extraInfo.ToString() +
                             $" on main thread: {Thread.CurrentThread.ManagedThreadId == AdManager.MainThreadId}";
             Debug.Log("CSJM_Unity " + "Example " + logString);
+            
+            if (Thread.CurrentThread.ManagedThreadId == AdManager.MainThreadId)
+            {
+                _adManager.RewardVideoAd_OnRewardArrived?.Invoke(isRewardValid, rewardType, extraInfo);
+                _adManager.RewardVideoAd_OnRewardArrived = null;
+            }
         }
     }
 

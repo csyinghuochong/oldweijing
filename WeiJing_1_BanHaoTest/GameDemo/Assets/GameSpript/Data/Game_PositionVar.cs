@@ -1127,6 +1127,10 @@ public class Game_PositionVar : MonoBehaviour {
         //写入月卡每日领取数据
         Game_PublicClassVar.Get_function_DataSet.DataSet_WriteData("YueKaDayStatus", "0", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseData");
         Game_PublicClassVar.Get_function_DataSet.DataSet_SetXml("RoseData");
+        
+        //写入今日礼包领取数据
+        Game_PublicClassVar.Get_function_DataSet.DataSet_WriteData("TodayGiftStatus", "0", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseData");
+        Game_PublicClassVar.Get_function_DataSet.DataSet_SetXml("RoseData");
 
         //清空登陆数据
         Game_PublicClassVar.Get_function_DataSet.DataSet_WriteData("DengLuDayStatus", "0", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseConfig");
