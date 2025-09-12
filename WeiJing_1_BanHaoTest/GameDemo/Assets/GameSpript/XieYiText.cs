@@ -20,10 +20,12 @@ public class XieYiText : MonoBehaviour
     public Button YongHuXieYiClose;
     public Button YinSiXieYiClose;
 
+    public GameObject TextYongHu;
     public GameObject TextYinSi;
 
     public GameObject UI_YinSiXieYi;
 
+    private bool LoadYongHu = false;
     private bool LoadYinSi = false;
 
   
@@ -96,6 +98,24 @@ public class XieYiText : MonoBehaviour
         this.YongHuXieYi.transform.Find("Scroll View/Scrollbar Vertical").GetComponent<Scrollbar>().value = 1f;
     }
 
+    public string GetYongHuText()
+    {
+        try
+        {
+            WebClient MyWebClient = new WebClient();
+            MyWebClient.Credentials = CredentialCache.DefaultCredentials;//获取或设置用于向Internet资源的请求进行身份验证的网络凭据
+            string dataurl =  "http://verification.weijinggame.com/weijing/MoLong/MoLongXieYi.txt" ;
+            Byte[] pageData = MyWebClient.DownloadData(dataurl); //从指定网站下载数据
+            string pageHtml = Encoding.UTF8.GetString(pageData);
+            return pageHtml;
+        }
+
+        catch (WebException webEx)
+        {
+            Debug.Log(webEx.ToString());
+        }
+        return "服务器维护中！";
+    }
 
     public string GetYingSiText()
     {
@@ -103,7 +123,7 @@ public class XieYiText : MonoBehaviour
         {
             WebClient MyWebClient = new WebClient();
             MyWebClient.Credentials = CredentialCache.DefaultCredentials;//获取或设置用于向Internet资源的请求进行身份验证的网络凭据
-            string dataurl =  "http://verification.weijinggame.com/weijing/yinsi3.txt" ;
+            string dataurl =  "http://verification.weijinggame.com/weijing/MoLong/MoLongYinSi.txt" ;
             Byte[] pageData = MyWebClient.DownloadData(dataurl); //从指定网站下载数据
             string pageHtml = Encoding.UTF8.GetString(pageData);
             return pageHtml;
@@ -117,9 +137,9 @@ public class XieYiText : MonoBehaviour
     }
 
 
-    public void ShowTextList(GameObject textItem)
+    public void ShowTextList(string info, GameObject textItem)
     {
-        string pageHtml = GetYingSiText();
+        string pageHtml = info;
 
         string tempstr = string.Empty;
         string leftValue = pageHtml;
@@ -205,7 +225,12 @@ public class XieYiText : MonoBehaviour
     {
         this.YongHuXieYi.SetActive(true);
         this.YinSiXieYi.SetActive(false);
-        StartCoroutine(DelayedAction());
+        
+        if (!this.LoadYongHu)
+        {
+            this.LoadYongHu = true;
+            ShowTextList(GetYongHuText(), this.TextYongHu);
+        }
     }
 
 
@@ -217,7 +242,7 @@ public class XieYiText : MonoBehaviour
         if (!this.LoadYinSi)
         {
             this.LoadYinSi = true;
-            ShowTextList(this.TextYinSi);
+            ShowTextList(GetYingSiText(), this.TextYinSi);
         }
     }
 
