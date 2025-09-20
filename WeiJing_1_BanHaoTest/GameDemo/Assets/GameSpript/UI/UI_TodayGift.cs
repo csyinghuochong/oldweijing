@@ -2,11 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using ByteDance.Union;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UI_TodayGift : MonoBehaviour
 {
     public GameObject Obj_RewardItemObjSet;
     public GameObject Obj_RewardItemObj;
+    public GameObject Obj_Num;
 
 
     void Start()
@@ -31,13 +33,18 @@ public class UI_TodayGift : MonoBehaviour
             itemObj.GetComponent<UI_ChouKaItemObj>().ItemID = rewardYueKaStr[0];
             itemObj.GetComponent<UI_ChouKaItemObj>().ItemNum = rewardYueKaStr[1];
         }
+
+        //显示次数
+        string num = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("TodayGiftStatus", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseData");
+        Obj_Num.GetComponent<Text>().text = "今日领取:" + num +"/3";
+
     }
 
     public void OnBtn_Get()
     {
         string yueKaDayStatus = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("TodayGiftStatus", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseData");
-        if (yueKaDayStatus == "1") {
-            Game_PublicClassVar.Get_function_UI.GameHint("今日礼包已经领取");
+        if (int.Parse(yueKaDayStatus) >= 3) {
+            Game_PublicClassVar.Get_function_UI.GameHint("每日领取奖励最多3次喔,请明日再来!");
             return;
         }
         
@@ -58,9 +65,11 @@ public class UI_TodayGift : MonoBehaviour
     private void OnRewardArrived(bool isRewardValid, int rewardType, IRewardBundleModel extraInfo)
     {
         string[] rewardStr = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("Value", "ID", "TodayGiftReward", "GameMainValue").Split(';');
-        
+
         // 记录领取
-        Game_PublicClassVar.Get_function_DataSet.DataSet_WriteData("TodayGiftStatus", "1", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseData");
+        string num = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("TodayGiftStatus", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseData");
+        num = num + 1;
+        Game_PublicClassVar.Get_function_DataSet.DataSet_WriteData("TodayGiftStatus", num, "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseData");
         Game_PublicClassVar.Get_function_DataSet.DataSet_SetXml("RoseData");
 
         //发送奖励

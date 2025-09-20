@@ -145,7 +145,7 @@ public class WWWSet:MonoBehaviour{
         Screen.autorotateToPortraitUpsideDown = false;
 
 #if UNITY_EDITOR
-        IfAddKey = true;            //默认False不加密文件
+        IfAddKey = false;            //默认False不加密文件
 #else
         IfAddKey = true;            //默认False不加密文件
 #endif
