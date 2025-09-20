@@ -69,7 +69,7 @@ public class GameLinkServer : MonoBehaviour {
     {
 
         //ipAddress = "192.168.1.14";
-        ipAddress = "gameserver_weijing1.weijinggame.com";
+        ipAddress = "molongzhixi.weijinggame.com";
         port = 17906;
         IPAddress[] serveIp = Dns.GetHostAddresses(ipAddress);
         Debug.Log("serveIp = " + serveIp[0]);

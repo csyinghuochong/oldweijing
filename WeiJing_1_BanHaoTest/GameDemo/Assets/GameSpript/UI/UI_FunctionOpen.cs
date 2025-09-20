@@ -36,6 +36,10 @@ public class UI_FunctionOpen : MonoBehaviour {
     public GameObject Obj_TodayGift;    //今日礼包
     private GameObject obj_RoseTodayGift;   //今日礼包实例化
 
+    public bool NewGame_Status;   //今日礼包状态
+    public GameObject Obj_NewGame;    //今日礼包
+    private GameObject obj_NewGame;   //今日礼包实例化
+
     public bool RoseMap_Status;             //小地图打开状态
     public GameObject Obj_Map;              //小地图源
     private GameObject obj_Map;             //小地图实例化
@@ -313,6 +317,30 @@ public class UI_FunctionOpen : MonoBehaviour {
 		    Destroy(obj_RoseTodayGift);
 		    RoseTodayGift_Status = false;
 	    }
+    }
+
+    // 前往新游戏
+    public void Open_GotoNewGame()
+    {
+        if (!NewGame_Status)
+        {
+            //载入背包UI
+            NewGame_Status = true;
+            obj_NewGame = (GameObject)Instantiate(Obj_NewGame);
+            Debug.Log("我点击了新游戏");
+            obj_NewGame.transform.SetParent(Game_PublicClassVar.Get_game_PositionVar.OBJ_UI_Set.GetComponent<UI_Set>().Obj_BuildingMainUISet_2.transform);
+            obj_NewGame.transform.localScale = new Vector3(1, 1, 1);
+            obj_NewGame.GetComponent<RectTransform>().anchoredPosition3D = new Vector3(0, 0, 0);
+            obj_NewGame.GetComponent<RectTransform>().offsetMin = new Vector2(0.0f, 0.0f);
+            obj_NewGame.GetComponent<RectTransform>().offsetMax = new Vector2(0.0f, 0.0f);
+            playUISource_Open();    //播放音效
+        }
+        else
+        {
+            playUISource_Close();   //播放音效
+            Destroy(obj_NewGame);
+            NewGame_Status = false;
+        }
     }
 
     //隐藏功能按钮

@@ -18,7 +18,7 @@ public class UI_TodayGift : MonoBehaviour
     {
         Game_PublicClassVar.Get_function_UI.DestoryTargetObj(Obj_RewardItemObjSet);
         
-        string[] rewardStr = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("Value", "ID", "TodayGiftReward", "GameMainValue").Split(';');
+        string[] rewardStr = "3,500".Split(';');
         
         //显示奖励
         for (int i = 0; i <= rewardStr.Length - 1; i++)

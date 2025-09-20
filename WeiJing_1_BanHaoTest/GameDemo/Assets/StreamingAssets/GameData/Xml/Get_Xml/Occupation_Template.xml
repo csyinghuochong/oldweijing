@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <DateArea>
-	<date ID="1" OccupationName="战士" BaseHp="3000" BaseMinAct="100" BaseMaxAct="5000" BaseMinDef="1000" BaseMaxDef="1000" BaseMinAdf="1000" BaseMaxAdf="1000" BaseMoveSpeed="4" BaseCri=".05" BaseHit="0" BaseDodge="0" BaseDefAdd="0" BaseAdfAdd="0" DamgeAdd="0" LvUpHp="7" LvUpMinAct="1" LvUpMaxAct="1" LvUpMinDef="1" LvUpMaxDef="1" LvUpMinAdf="1" LvUpMaxAdf="1" />
-	<date ID="2" OccupationName="法师" BaseHp="3000" BaseMinAct="100" BaseMaxAct="5000" BaseMinDef="1000" BaseMaxDef="1000" BaseMinAdf="1000" BaseMaxAdf="1000" BaseMoveSpeed="4.5" BaseCri=".05" BaseHit="0" BaseDodge="0" BaseDefAdd="0" BaseAdfAdd="0" DamgeAdd="0" LvUpHp="5" LvUpMinAct="1.2" LvUpMaxAct="1.2" LvUpMinDef="1" LvUpMaxDef="1" LvUpMinAdf="1" LvUpMaxAdf="1" />
+	<date ID="1" OccupationName="战士" BaseHp="50" BaseMinAct="0" BaseMaxAct="5" BaseMinDef="1" BaseMaxDef="1" BaseMinAdf="1" BaseMaxAdf="1" BaseMoveSpeed="4" BaseCri=".05" BaseHit="0" BaseDodge="0" BaseDefAdd="0" BaseAdfAdd="0" DamgeAdd="0" LvUpHp="7" LvUpMinAct="1" LvUpMaxAct="1" LvUpMinDef="1" LvUpMaxDef="1" LvUpMinAdf="1" LvUpMaxAdf="1" />
+	<date ID="2" OccupationName="法师" BaseHp="35" BaseMinAct="0" BaseMaxAct="7" BaseMinDef="1" BaseMaxDef="1" BaseMinAdf="1" BaseMaxAdf="1" BaseMoveSpeed="4.5" BaseCri=".05" BaseHit="0" BaseDodge="0" BaseDefAdd="0" BaseAdfAdd="0" DamgeAdd="0" LvUpHp="5" LvUpMinAct="1.2" LvUpMaxAct="1.2" LvUpMinDef="1" LvUpMaxDef="1" LvUpMinAdf="1" LvUpMaxAdf="1" />
 </DateArea>

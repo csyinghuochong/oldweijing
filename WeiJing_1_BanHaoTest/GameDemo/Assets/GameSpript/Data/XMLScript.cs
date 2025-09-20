@@ -301,8 +301,8 @@ public class XMLScript
     {
         string destFile = "D:/1.txt";
 
-        string Key = @"P@+#wG+Z";       //私匙
-        string IV = @"L%n67}G\Mk@k%:~Y";        //加密偏移量
+        string Key = @"P@+#wG+A";       //私匙
+        string IV = @"L%n67}G\Mk@k%:~M";        //加密偏移量
 
         //转换对应密匙到字节
         byte[] btKey = Encoding.Default.GetBytes(Key);
@@ -355,8 +355,8 @@ public class XMLScript
     {
         string destFile = Game_PublicClassVar.Get_wwwSet.Set_XmlPath + "xuliehao.txt";
 
-        string Key = @"P@+#wG+Z";       //私匙
-        string IV = @"L%n67}G\Mk@k%:~Y";        //加密偏移量
+        string Key = @"P@+#wG+A";       //私匙
+        string IV = @"L%n67}G\Mk@k%:~M";        //加密偏移量
 
         //转换对应密匙到字节
         byte[] btKey = Encoding.Default.GetBytes(Key);
@@ -456,8 +456,8 @@ public class XMLScript
     {
 
 
-        string Key = @"P@+#wG+Z";       //私匙
-        string IV = @"L%n67}G\Mk@k%:~Y";        //加密偏移量
+        string Key = @"P@+#wG+A";       //私匙
+        string IV = @"L%n67}G\Mk@k%:~M";        //加密偏移量
 
         string destFile = FilePath;
         //转换对应密匙到字节
@@ -496,8 +496,8 @@ public class XMLScript
     public bool setKey(string sourceFile, string FilePath)
     {
         //Debug.Log("sourceFile = " + sourceFile + "    ********* FilePath = " + FilePath);
-        string Key = @"P@+#wG+Z";       //私匙
-        string IV = @"L%n67}G\Mk@k%:~Y";        //加密偏移量
+        string Key = @"P@+#wG+A";       //私匙
+        string IV = @"L%n67}G\Mk@k%:~M";        //加密偏移量
 
         string destFile = FilePath;
         //转换对应密匙到字节
@@ -539,11 +539,17 @@ public class XMLScript
     public string CostKey(string filePath, string fileNameText)
     {
 
-        string Key = @"P@+#wG+Z";       //私匙
-        string IV = @"L%n67}G\Mk@k%:~Y";        //加密偏移量
+        string Key = @"P@+#wG+A";       //私匙
+        string IV = @"L%n67}G\Mk@k%:~M";        //加密偏移量
 
         string sourceFile = filePath;
         string[] destFileArr = filePath.Split('.');
+        /*
+        if (destFileArr.Length >= 3) {
+            destFileArr[0] = destFileArr[0] + destFileArr[1];
+            destFileArr[1] = destFileArr[2];
+        }
+        */
         string destFile = destFileArr[0] + "_JieMi." + destFileArr[1];
 
         //转换对应密匙到字节
@@ -582,8 +588,8 @@ public class XMLScript
     //初始化解密指定XML文件
     public string CostKey_2(string filePath, WWW www)
     {
-        string Key = @"P@+#wG+Z";       //私匙
-        string IV = @"L%n67}G\Mk@k%:~Y";        //加密偏移量
+        string Key = @"P@+#wG+A";       //私匙
+        string IV = @"L%n67}G\Mk@k%:~M";        //加密偏移量
         //filePath = "D:/sss/RoseData_AddJie.xml";
         string sourceFile = filePath;
         string[] destFileArr = filePath.Split('.');
@@ -678,8 +684,8 @@ public class XMLScript
         //sss();
         //WWW WWW_xml = new WWW("D:/sss/RoseData_AddJie.xml");
 
-        string Key = @"P@+#wG+Z";       //私匙
-        string IV = @"L%n67}G\Mk@k%:~Y";        //加密偏移量
+        string Key = @"P@+#wG+A";       //私匙
+        string IV = @"L%n67}G\Mk@k%:~M";        //加密偏移量
 
         string destFile = FilePath;
         //转换对应密匙到字节

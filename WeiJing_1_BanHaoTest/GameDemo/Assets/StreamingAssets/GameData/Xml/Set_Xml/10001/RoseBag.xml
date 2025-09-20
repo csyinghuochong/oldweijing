@@ -2,21 +2,21 @@
 <DateArea>
   <date ID="1" ItemID="10010011" ItemNum="20" HideID="0" />
   <date ID="2" ItemID="10010001" ItemNum="10" HideID="0"/>
-  <date ID="3" ItemID="10011001" ItemNum="999" HideID="0"/>
-  <date ID="4" ItemID="10011002" ItemNum="999" HideID="0"/>
-  <date ID="5" ItemID="10011003" ItemNum="999" HideID="0"/>
-  <date ID="6" ItemID="10011004" ItemNum="999" HideID="0"/>
-  <date ID="7" ItemID="10030220" ItemNum="1" HideID="0"/>
-  <date ID="8" ItemID="10030263" ItemNum="1" HideID="0"/>
-  <date ID="9" ItemID="10030216" ItemNum="1" HideID="0"/>
-  <date ID="10" ItemID="10030214" ItemNum="1" HideID="0"/>
-  <date ID="11" ItemID="10010081" ItemNum="999" HideID="0"/>
-  <date ID="12" ItemID="10010082" ItemNum="999" HideID="0"/>
-  <date ID="13" ItemID="10010083" ItemNum="999" HideID="0"/>
-  <date ID="14" ItemID="10010033" ItemNum="999" HideID="0"/>
-  <date ID="15" ItemID="10010027" ItemNum="999" HideID="0"/>
-  <date ID="16" ItemID="10020015" ItemNum="999" HideID="0"/>
-  <date ID="17" ItemID="10010026" ItemNum="999" HideID="0"/>
+  <date ID="3" ItemID="0" ItemNum="0" HideID="0"/>
+  <date ID="4" ItemID="0" ItemNum="0" HideID="0"/>
+  <date ID="5" ItemID="0" ItemNum="0" HideID="0"/>
+  <date ID="6" ItemID="0" ItemNum="0" HideID="0"/>
+  <date ID="7" ItemID="0" ItemNum="0" HideID="0"/>
+  <date ID="8" ItemID="0" ItemNum="0" HideID="0"/>
+  <date ID="9" ItemID="0" ItemNum="0" HideID="0"/>
+  <date ID="10" ItemID="0" ItemNum="0" HideID="0"/>
+  <date ID="11" ItemID="0" ItemNum="0" HideID="0"/>
+  <date ID="12" ItemID="0" ItemNum="0" HideID="0"/>
+  <date ID="13" ItemID="0" ItemNum="0" HideID="0"/>
+  <date ID="14" ItemID="0" ItemNum="0" HideID="0"/>
+  <date ID="15" ItemID="0" ItemNum="0" HideID="0"/>
+  <date ID="16" ItemID="0" ItemNum="0" HideID="0"/>
+  <date ID="17" ItemID="0" ItemNum="0" HideID="0"/>
   <date ID="18" ItemID="0" ItemNum="0" HideID="0"/>
   <date ID="19" ItemID="0" ItemNum="0" HideID="0"/>
   <date ID="20" ItemID="0" ItemNum="0" HideID="0"/>

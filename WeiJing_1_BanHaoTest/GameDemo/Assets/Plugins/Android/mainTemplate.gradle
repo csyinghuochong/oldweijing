@@ -5,8 +5,29 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.9.0'
+// Android Resolver Dependencies Start
+    implementation 'com.android.support:appcompat-v7:28.0.0' // Assets/CSJ/Editor/PangleAdapterScriptsDependencies.xml:27
+    implementation 'com.android.support:support-v4:28.0.0' // Assets/CSJ/Editor/PangleAdapterScriptsDependencies.xml:28
+    implementation 'com.pangle.cn:mediation-baidu-adapter:9.3905.1' // Assets/CSJ/Editor/PangleAdapterScriptsDependencies.xml:32
+    implementation 'com.pangle.cn:mediation-gdt-adapter:4.640.1510.0' // Assets/CSJ/Editor/PangleAdapterScriptsDependencies.xml:30
+    implementation 'com.pangle.cn:mediation-ks-adapter:3.3.76.5.0' // Assets/CSJ/Editor/PangleAdapterScriptsDependencies.xml:31
+    implementation 'com.pangle.cn:mediation-mintegral-adapter:16.6.57.9' // Assets/CSJ/Editor/PangleAdapterScriptsDependencies.xml:33
+    implementation 'com.pangle.cn:mediation-sigmob-adapter:4.22.2.0' // Assets/CSJ/Editor/PangleAdapterScriptsDependencies.xml:35
+    implementation 'com.pangle.cn:mediation-unity-adapter:4.3.0.33' // Assets/CSJ/Editor/PangleAdapterScriptsDependencies.xml:34
+// Android Resolver Dependencies End
 **DEPS**}
 
+// Android Resolver Exclusions Start
+android {
+  packagingOptions {
+      exclude ('/lib/arm64-v8a/*' + '*')
+      exclude ('/lib/armeabi/*' + '*')
+      exclude ('/lib/mips/*' + '*')
+      exclude ('/lib/mips64/*' + '*')
+      exclude ('/lib/x86_64/*' + '*')
+  }
+}
+// Android Resolver Exclusions End
 android {
     namespace "com.unity3d.player"
     ndkPath "**NDKPATH**"
