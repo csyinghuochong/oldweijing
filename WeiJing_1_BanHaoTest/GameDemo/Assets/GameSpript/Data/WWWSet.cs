@@ -132,7 +132,7 @@ public class WWWSet:MonoBehaviour{
     ///18	18+
     public int AgeRange = -1;
     public int RemainingTime;
-    public int RemainingTimeSum;
+    public float RemainingTimeSum;
 
     //UI类
     public GameObject Obj_BeiFenData;               //备份UI
@@ -831,6 +831,28 @@ public class WWWSet:MonoBehaviour{
                 Game_PublicClassVar.Get_xmlScript.CopyFile(new DirectoryInfo(beifenFileName), Set_XmlPath);
                 Application.Quit(); //退出游戏,以后要改成重启需要调用安卓方法
             }
+        }
+
+
+        //测试防沉迷
+        if (AgeRange>=1 && AgeRange < 18)
+        {
+            RemainingTimeSum = RemainingTimeSum + Time.deltaTime;
+            if (RemainingTimeSum + 10 >= RemainingTime) {
+
+                //弹出防沉迷认证
+                GameObject OBJ_UI_Set = GameObject.FindWithTag("UI_Set");
+                OBJ_UI_Set.GetComponent<UI_Set>().FangChengMiHintNew();
+            }
+
+            //10秒后自动关闭游戏
+
+            if (RemainingTimeSum >= RemainingTime)
+            {
+                ExitGame();
+            }
+
+
         }
 
     }
