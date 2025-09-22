@@ -17,6 +17,9 @@ public class TapTapLogin : MonoBehaviour
     /// </summary>
     async void Start()
     {
+        Debug.Log("GameSDKManager.Instance.InitSDK");
+
+
         // 初始化 SDK
         GameSDKManager.Instance.InitSDK();
 

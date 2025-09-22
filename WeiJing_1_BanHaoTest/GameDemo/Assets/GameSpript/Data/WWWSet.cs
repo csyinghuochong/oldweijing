@@ -143,7 +143,8 @@ public class WWWSet:MonoBehaviour{
 
     public GameObject Obj_CommonHintHint_2;           //提示UI
 
-    void Awake() {
+    void Awake()
+    {
 
         //设置屏幕自动旋转， 并置支持的方向
         Screen.orientation = ScreenOrientation.AutoRotation;
@@ -164,7 +165,7 @@ public class WWWSet:MonoBehaviour{
         wordldTimeStatus = 4;
         Get_XmlPath = Application.persistentDataPath + "/GameData/Xml/Get_Xml/";
         Set_XmlPath = Application.persistentDataPath + "/GameData/Xml/Set_Xml/" + RoseID + "/";
-        
+
         DontDestroyOnLoad(this.gameObject);
 
         xmlVersion = 110;       //只要此值比之前存储的值大就会覆盖XML数据（角色数据不会覆盖）
@@ -182,22 +183,28 @@ public class WWWSet:MonoBehaviour{
         //Application.runInBackground = true;
 
         Debug.Log("开始缓存读取的数据表");    //必须加这个Debug  要不读取文件会报错,原因不明
-        //Game_PublicClassVar.Get_function_DataSet.DataSet_AllReadXml()
+                                    //Game_PublicClassVar.Get_function_DataSet.DataSet_AllReadXml()
 
         //协同加载时间状态
         //this.StartCoroutine(LoadWorldTime());
-        
+
         //WorldTimeStatus = true;
 
         //加载数据
         this.StartCoroutine(Set_GameConfig_1());
         this.StartCoroutine(Set_GameConfig_2());
+    }
 
+
+        IEnumerator OnTapLoginButtonClick()
+    {
+        yield return new WaitForSeconds(0.2f);
 
         this.gameObject.GetComponent<TapTapLogin>().OnTapLoginButtonClick();
     }
 
-	void Start () {
+
+    void Start () {
 
         //配置表总数
         updataNum = 37;
