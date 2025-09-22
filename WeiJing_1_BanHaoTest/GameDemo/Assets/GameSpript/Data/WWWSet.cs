@@ -132,6 +132,7 @@ public class WWWSet:MonoBehaviour{
     ///18	18+
     public int AgeRange = -1;
     public int RemainingTime;
+    public int RemainingTimeSum;
 
     //UI类
     public GameObject Obj_BeiFenData;               //备份UI
