@@ -1,4 +1,4 @@
-package com.ChinaBoyBanHao.weijing;
+package com.ChinaBoy.molong;
 
 import android.Manifest;
 import android.app.Activity;
@@ -16,7 +16,7 @@ import android.util.Log;
 import android.view.WindowManager;
 import android.widget.Toast;
 
-import com.ChinaBoyBanHao.weijing.wxapi.WXPayEntryActivity;
+import com.ChinaBoy.molong.wxapi.WXPayEntryActivity;
 import com.tencent.mm.sdk.modelpay.PayReq;
 import com.tencent.mm.sdk.openapi.IWXAPI;
 import com.tencent.mm.sdk.openapi.WXAPIFactory;
@@ -175,7 +175,7 @@ public class MainActivity extends UnityPlayerActivity {
             //if (this.mContext.checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED)
             {
                 //Log.i("Permissions", "Permissions WRITE_EXTERNAL_STORAGE 0");
-                permissionList.add(Manifest.permission.WRITE_EXTERNAL_STORAGE);
+                //permissionList.add(Manifest.permission.WRITE_EXTERNAL_STORAGE);
             }
 
             //if (this.mContext.checkSelfPermission(Manifest.permission.REQUEST_INSTALL_PACKAGES) != PackageManager.PERMISSION_GRANTED)

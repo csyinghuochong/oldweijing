@@ -1,4 +1,4 @@
-package com.ChinaBoyBanHao.weijing;
+package com.ChinaBoy.molong;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.InputStreamReader;
