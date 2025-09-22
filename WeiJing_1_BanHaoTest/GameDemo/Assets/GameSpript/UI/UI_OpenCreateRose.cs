@@ -50,6 +50,17 @@ public class UI_OpenCreateRose : MonoBehaviour {
 
     public void Open_CreateRose() {
 
+        //判断当前是否进行防沉迷验证
+        if (Game_PublicClassVar.Get_wwwSet.AgeRange < 12) {
+
+            //禁止登录游戏
+            Debug.Log("年龄未达到指定年龄,禁止登录游戏.");
+            return;
+
+        }
+
+
+
         //判定当前读取时间是否正常
         if (!Game_PublicClassVar.Get_wwwSet.TryWorldTimeStatus) {
             Debug.Log("请稍后再试");
