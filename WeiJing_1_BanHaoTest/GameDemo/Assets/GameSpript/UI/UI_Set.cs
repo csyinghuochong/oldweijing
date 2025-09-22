@@ -62,7 +62,7 @@ public class UI_Set : MonoBehaviour {
 
     public void FangChengMiHint()
     {
-
+        return;
         string nowTime = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("BeiYong_10", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseConfig");
         nowTime = PlayerPrefs.GetInt("FangChenMi_Time").ToString();
 
@@ -165,7 +165,6 @@ public class UI_Set : MonoBehaviour {
 
     public void FangChengMiHintNew()
     {
-
         //弹出对应提示
         GameObject uiCommonHint = (GameObject)MonoBehaviour.Instantiate(Game_PublicClassVar.Get_game_PositionVar.Obj_UICommonHint);
         uiCommonHint.GetComponent<UI_CommonHint>().Btn_CommonHint("亲爱的玩家,您好！您今天的游戏时间已结束，10秒后自动退出游戏。", Game_PublicClassVar.Get_wwwSet.ExitGame, Game_PublicClassVar.Get_wwwSet.ExitGame, "温馨提示", "退出游戏", "退出游戏");
@@ -173,7 +172,6 @@ public class UI_Set : MonoBehaviour {
         uiCommonHint.transform.SetParent(Game_PublicClassVar.Get_game_PositionVar.OBJ_UI_Set.transform);
         uiCommonHint.transform.localPosition = Vector3.zero;
         uiCommonHint.transform.localScale = new Vector3(1, 1, 1);
-
     }
 
 }

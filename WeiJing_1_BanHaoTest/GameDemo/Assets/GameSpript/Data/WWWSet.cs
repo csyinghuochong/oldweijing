@@ -838,12 +838,6 @@ public class WWWSet:MonoBehaviour{
         if (AgeRange>=1 && AgeRange < 18)
         {
             RemainingTimeSum = RemainingTimeSum + Time.deltaTime;
-            if (RemainingTimeSum + 10 >= RemainingTime) {
-
-                //弹出防沉迷认证
-                GameObject OBJ_UI_Set = GameObject.FindWithTag("UI_Set");
-                OBJ_UI_Set.GetComponent<UI_Set>().FangChengMiHintNew();
-            }
 
             //10秒后自动关闭游戏
 
@@ -852,9 +846,16 @@ public class WWWSet:MonoBehaviour{
                 ExitGame();
             }
 
+            if (RemainingTimeSum + 10 >= RemainingTime) {
 
+                //弹出防沉迷认证
+                GameObject OBJ_UI_Set = GameObject.FindWithTag("UI_Set");
+                if (OBJ_UI_Set != null)
+                {
+                    OBJ_UI_Set.GetComponent<UI_Set>().FangChengMiHintNew();
+                }
+            }
         }
-
     }
 
     //获取当前时间
