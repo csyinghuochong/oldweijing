@@ -82,6 +82,7 @@ public class XieYiText : MonoBehaviour
         }
 
         PlayerPrefs.SetString(UIYinSiKey, "1");
+        this.gameObject.GetComponent<TapTapLogin>().OnTapLoginButtonClick();
     }
 
 

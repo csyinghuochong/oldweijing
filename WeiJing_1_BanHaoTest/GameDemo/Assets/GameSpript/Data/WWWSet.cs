@@ -194,15 +194,13 @@ public class WWWSet:MonoBehaviour{
         this.StartCoroutine(Set_GameConfig_1());
         this.StartCoroutine(Set_GameConfig_2());
 
-        StartCoroutine(OnTapLoginButtonClick());
+        //StartCoroutine(OnTapLoginButtonClick());
     }
 
 
     IEnumerator OnTapLoginButtonClick()
     {
         yield return new WaitForSeconds(0.2f);
-        Debug.Log("OnTapLoginButtonClick");
-        this.gameObject.GetComponent<TapTapLogin>().OnTapLoginButtonClick();
     }
 
 

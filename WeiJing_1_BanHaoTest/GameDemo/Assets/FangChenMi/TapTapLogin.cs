@@ -53,6 +53,7 @@ public class TapTapLogin : MonoBehaviour
     /// </summary>
     public async void OnTapLoginButtonClick()
     {
+        Debug.Log("OnTapLoginButtonClick");
         try
         {
             List<string> scopes = new List<string>
