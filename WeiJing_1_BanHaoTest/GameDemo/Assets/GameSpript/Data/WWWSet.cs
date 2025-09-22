@@ -185,6 +185,8 @@ public class WWWSet:MonoBehaviour{
         this.StartCoroutine(Set_GameConfig_1());
         this.StartCoroutine(Set_GameConfig_2());
 
+
+        this.gameObject.GetComponent<TapTapLogin>().OnTapLoginButtonClick();
     }
 
 	void Start () {
