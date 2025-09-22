@@ -125,6 +125,11 @@ public class WWWSet:MonoBehaviour{
     public bool TryWorldTimeStatus;         //尝试连接网络时间
     public string GameServerVersionStr;       //游戏版本
 
+
+    ///0	0 - 7 
+    ///8	8 - 15 
+    ///16	16 -- 17 
+    ///18	18+
     public int AgeRange = -1;
     public int RemainingTime;
 
