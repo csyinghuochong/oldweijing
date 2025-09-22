@@ -1,0 +1,157 @@
+using System;
+using UnityEngine.SceneManagement;
+using TapSDK.Login;
+using TapSDK.Compliance;
+using TapSDK.Core;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Threading.Tasks;
+
+/// <summary>
+/// SDK 初始化及合规认证回调处理管理类
+/// </summary>
+public sealed class GameSDKManager
+{
+    // 游戏在 TapTap 开发者中心对应的 Client ID
+    private readonly string clientId = "yfbkmzv4zafmyq8nzb";
+
+    // 游戏在 TapTap 开发者中心对应的 Client Token
+    private readonly string clientToken = "UAmCBcwjj6NPxQbOk2PRxlHWfFaSUblIxXOz7J8Q";
+
+    // 异常事件类型-适龄限制
+    public const int EVENT_TYPE_AGE_RESTRICT = 1;
+
+    // 异常事件类型-网络异常或应用信息配置错误
+    public const int EVENT_TYPE_NETWORK_ERROR = 2;
+
+    // 是否已初始化
+    private readonly bool hasInit = false;
+
+    // 是否已通过合规认证检查
+    public bool hasCheckedCompliance { get; private set; }
+
+    // 合规认证部分限制事件监听，用于显示对应提示 UI
+    private readonly List<Action<int>> restrictActionList;
+
+    private static readonly Lazy<GameSDKManager> lazy
+        = new Lazy<GameSDKManager>(() => new GameSDKManager());
+    public static GameSDKManager Instance { get { return lazy.Value; } }
+
+    private GameSDKManager()
+    {
+        restrictActionList = new List<Action<int>>();
+    }
+
+    // 声明合规认证回调
+    private readonly Action<int, string> ComplianceCallback = (code, errorMsg) =>
+    {
+        // 根据回调返回的参数 code 添加不同情况的处理
+        UnityEngine.Debug.Log($" ComplianceCallback；  code: {code}  errorMsg:{errorMsg}");
+        switch (code)
+        {
+            case 500: // 玩家未受限制，可正常开始
+                Instance.hasCheckedCompliance = true;
+                foreach (Action<int> action in Instance.restrictActionList)
+                {
+                    action.Invoke(0);
+                }
+                break;
+            case 1000: // 防沉迷认证凭证无效时触发
+            case 1001: // 当玩家触发时长限制时，点击了拦截窗口中「切换账号」按钮
+            case 9002: // 实名认证过程中玩家关闭了实名窗口
+                TapSDK.Login.TapTapLogin.Instance.Logout();
+                break;
+
+            case 1100: // 当前用户因触发应用设置的年龄限制无法进入游戏
+                foreach (Action<int> action in Instance.restrictActionList)
+                {
+                    UnityEngine.Debug.Log("show anit ui");
+                    action.Invoke(EVENT_TYPE_AGE_RESTRICT);
+                }
+                break;
+
+            case 1200: // 数据请求失败，应用信息错误或网络连接异常  
+                foreach (Action<int> action in Instance.restrictActionList)
+                {
+                    action.Invoke(EVENT_TYPE_NETWORK_ERROR);
+                }
+                break;
+
+            default:
+                UnityEngine.Debug.Log("其他可选回调");
+                break;
+        }
+
+    };
+
+    /// <summary>
+    /// 初始化登录与合规认证 SDK 
+    /// </summary>
+    public void InitSDK()
+    {
+        if (!hasInit)
+        {
+
+            TapTapSdkOptions coreOptions = new TapTapSdkOptions
+            {
+                clientId = clientId,
+                clientToken = clientToken
+            };
+            TapTapComplianceOption complianceOption = new TapTapComplianceOption
+            {
+                showSwitchAccount = false, // 是否显示切换账号按钮
+                useAgeRange = true // 是否使用年龄段信息
+            };
+            // 创建其他选项数组
+            TapTapSdkBaseOptions[] otherOptions = new TapTapSdkBaseOptions[]
+            {
+                complianceOption
+            };
+            TapTapSDK.Init(coreOptions, otherOptions);
+            TapTapCompliance.RegisterComplianceCallback(ComplianceCallback);
+        }
+    }
+
+    /// <summary>
+    /// 开始合规认证检查
+    /// </summary>
+    /// <param name="userIdentifier">用户唯一标识</param>
+    public void StartCheckCompliance(string userIdentifier)
+    {
+        hasCheckedCompliance = false;
+
+        UnityEngine.Debug.Log($" TapTapCompliance.Startup；  {userIdentifier}");
+        TapTapCompliance.Startup(userIdentifier);
+    }
+
+    /// <summary>
+    /// 注册合规认证异常回调监听
+    /// </summary>
+    /// <param name="action"> 监听实例</param>
+    public void RegisterListener(Action<int> action)
+    {
+        UnityEngine.Debug.Log("register anit ui");
+        restrictActionList.Add(action);
+    }
+
+    /// <summary>
+    /// 移除合规认证异常回调监听
+    /// </summary>
+    /// <param name="action"> 监听实例</param>
+    public void UnRegisterListener(Action<int> action)
+    {
+        UnityEngine.Debug.Log("移除监听");
+        restrictActionList.Remove(action);
+    }
+
+    public async Task<int> GetAgeRange()
+    {
+        return await TapTapCompliance.GetAgeRange();
+    }
+
+
+    public async Task<int> GetRemainingTime()
+    {
+        return await TapTapCompliance.GetRemainingTime();
+    }
+}
