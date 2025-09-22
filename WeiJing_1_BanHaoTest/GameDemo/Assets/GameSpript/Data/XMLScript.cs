@@ -550,8 +550,7 @@ public class XMLScript
             destFileArr[1] = destFileArr[2];
         }
         */
-        string destFile = destFileArr[0] + "_JieMi." + destFileArr[1];
-
+        string destFile = filePath.Replace(".xml", "_JieMi.xml");   //; destFileArr[0] + "_JieMi." + destFileArr[1];
         //转换对应密匙到字节
         byte[] btKey = Encoding.Default.GetBytes(Key);
         byte[] btIV = Encoding.Default.GetBytes(IV);
