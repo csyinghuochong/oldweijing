@@ -4,9 +4,7 @@ using System.Collections.Generic;
 using System.Net;
 using System.Text;
 using UnityEngine;
-using UnityEngine.PlayerLoop;
 using UnityEngine.UI;
-using static UnityEngine.UI.CanvasScaler;
 
 public class XieYiText : MonoBehaviour
 {

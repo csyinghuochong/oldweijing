@@ -186,6 +186,8 @@ public class TapTapLogin : MonoBehaviour
         int age = await GameSDKManager.Instance.GetAgeRange();
         int remaintime = await GameSDKManager.Instance.GetRemainingTime();
         Debug.Log($"HandleAntiAddictionError: age: {age}  remaintime: {remaintime}");
+        this.gameObject.GetComponent<WWWSet>().AgeRange = age;
+        this.gameObject.GetComponent<WWWSet>().RemainingTime = remaintime;
         if (type == 0)
         {
             //可以游戏  todo

@@ -125,6 +125,9 @@ public class WWWSet:MonoBehaviour{
     public bool TryWorldTimeStatus;         //尝试连接网络时间
     public string GameServerVersionStr;       //游戏版本
 
+    public int AgeRange = -1;
+    public int RemainingTime;
+
     //UI类
     public GameObject Obj_BeiFenData;               //备份UI
 
