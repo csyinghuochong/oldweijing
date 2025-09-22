@@ -169,13 +169,13 @@ public class TapTapLogin : MonoBehaviour
     public async void HandleAntiAddictionError(int type)
     {
         Debug.Log($"HandleAntiAddictionError:  {type}");
-        switch (type)
+        switch (type)   
         {
             case GameSDKManager.EVENT_TYPE_AGE_RESTRICT:
-                Debug.Log($"适龄限制");
+                Debug.Log($"适龄限制") ;   //未成年啥的
                 break;
             case GameSDKManager.EVENT_TYPE_NETWORK_ERROR:
-                Debug.Log($"网络异常");
+                Debug.Log($"网络异常");   //没网络或者后台配置不对
                 break;
             default:
                 Debug.Log($"可以游戏");
