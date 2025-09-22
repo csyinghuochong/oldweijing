@@ -52,7 +52,15 @@ public class XieYiText : MonoBehaviour
 		jo = jc.GetStatic<AndroidJavaObject>("currentActivity");
 #endif
 
-        this.UI_YinSiXieYi.SetActive(!PlayerPrefs.GetString(UIYinSiKey).Equals("1"));
+        if (PlayerPrefs.GetString(UIYinSiKey).Equals("1"))
+        {
+            this.UI_YinSiXieYi.SetActive(false);
+            GameObject.FindWithTag("Tag_WWWSet").GetComponent<TapTapLogin>().OnTapLoginButtonClick();
+        }
+        else
+        {
+            this.UI_YinSiXieYi.SetActive(true);
+        }
     }
 
     /// <summary>
@@ -69,7 +77,7 @@ public class XieYiText : MonoBehaviour
     }
 
 
-    private const string UIYinSiKey = "UIYinSi_1022";
+    private const string UIYinSiKey = "UIYinSi_1023";
     public void onRequestPermissionsResult(string permissons)
     {
         Debug.Log($"onRequestPermissionsResult: {permissons}");
@@ -82,7 +90,7 @@ public class XieYiText : MonoBehaviour
         }
 
         PlayerPrefs.SetString(UIYinSiKey, "1");
-        this.gameObject.GetComponent<TapTapLogin>().OnTapLoginButtonClick();
+        GameObject.FindWithTag("Tag_WWWSet").GetComponent<TapTapLogin>().OnTapLoginButtonClick();
     }
 
 
