@@ -193,6 +193,7 @@ public class WWWSet:MonoBehaviour{
         //加载数据
         this.StartCoroutine(Set_GameConfig_1());
         this.StartCoroutine(Set_GameConfig_2());
+        OnTapLoginButtonClick();
     }
 
 
