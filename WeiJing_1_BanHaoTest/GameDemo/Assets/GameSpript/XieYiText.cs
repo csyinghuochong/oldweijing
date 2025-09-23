@@ -77,7 +77,7 @@ public class XieYiText : MonoBehaviour
     }
 
 
-    private const string UIYinSiKey = "UIYinSi_1024";
+    private const string UIYinSiKey = "UIYinSi_092301";
     public void onRequestPermissionsResult(string permissons)
     {
         Debug.Log($"onRequestPermissionsResult: {permissons}");

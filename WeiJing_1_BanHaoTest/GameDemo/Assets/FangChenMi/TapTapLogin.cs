@@ -56,23 +56,23 @@ public class TapTapLogin : MonoBehaviour
         Debug.Log("OnTapLoginButtonClick");
 
         TapTapAccount account = null;
-        try
-        {
-            // 检查本地是否已存在 account 信息
-            account = await TapSDK.Login.TapTapLogin.Instance.GetCurrentTapAccount();
-        }
-        catch (Exception e)
-        {
-            Debug.Log("本地无用户信息");
-        }
+        //try
+        //{
+        //    // 检查本地是否已存在 account 信息
+        //    account = await TapSDK.Login.TapTapLogin.Instance.GetCurrentTapAccount();
+        //}
+        //catch (Exception e)
+        //{
+        //    Debug.Log("本地无用户信息");
+        //}
 
-        // 本地存在用户信息且未通过合规认证时进行合规认证检查
-        if (account != null && !GameSDKManager.Instance.hasCheckedCompliance)
-        {
-            //Debug.Log("本地有用户信息");
-            StartCheckCompliance();
-            return;
-        }
+        //// 本地存在用户信息且未通过合规认证时进行合规认证检查
+        //if (account != null && !GameSDKManager.Instance.hasCheckedCompliance)
+        //{
+        //    //Debug.Log("本地有用户信息");
+        //    StartCheckCompliance();
+        //    return;
+        //}
 
 
         try
