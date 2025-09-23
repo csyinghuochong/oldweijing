@@ -63,6 +63,7 @@ public sealed class GameSDKManager
                 break;
 
             case 1100: // 当前用户因触发应用设置的年龄限制无法进入游戏
+            case 1030:
                 foreach (Action<int> action in Instance.restrictActionList)
                 {
                     UnityEngine.Debug.Log("show anit ui");
