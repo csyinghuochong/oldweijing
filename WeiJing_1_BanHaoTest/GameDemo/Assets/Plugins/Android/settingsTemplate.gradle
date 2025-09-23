@@ -27,6 +27,9 @@ dependencyResolutionManagement {
         maven {
             url "https://maven.aliyun.com/repository/google" // Assets/CSJ/Editor/PangleAdapterScriptsDependencies.xml:14
         }
+        maven {
+            url "https://repo.maven.apache.org/maven2" // Assets/TapSDK/Compliance/Mobile/Editor/NativeDependencies.xml:6, Assets/TapSDK/Core/Mobile/Editor/NativeDependencies.xml:6, Assets/TapSDK/Login/Mobile/Editor/NativeDependencies.xml:6
+        }
         mavenLocal()
 // Android Resolver Repos End
         flatDir {
