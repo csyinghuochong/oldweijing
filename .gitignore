@@ -4,9 +4,10 @@
 .sconsign.dblite
 .cspro
 .bytes
-
 *.pyc
+*.cproject
 *.suo
+*.csproj
 
 .settings/
 .localhistory/
