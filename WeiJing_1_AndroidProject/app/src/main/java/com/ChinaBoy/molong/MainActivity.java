@@ -31,10 +31,6 @@ import java.util.List;
 
 import android.content.IntentFilter;
 
-import com.quicksdk.Sdk;
-import com.quicksdk.utility.AppConfig;
-
-
 public class MainActivity extends UnityPlayerActivity {
 
 
@@ -77,14 +73,12 @@ public class MainActivity extends UnityPlayerActivity {
     }
 
     public String getProductCode() {
-        Log.i("product_code:  ", AppConfig.getInstance().getConfigValue("product_code"));
-        return AppConfig.getInstance().getConfigValue("product_code");
+        return "";
     }
 
     public void onBackPressed() {
         // TODO Auto-generated method stub
         super.onBackPressed();
-        Sdk.getInstance().exit(activity);
     }
 
     //判断是否已经安装微信的接口
