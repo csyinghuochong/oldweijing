@@ -837,7 +837,8 @@ public class WWWSet:MonoBehaviour{
         //测试防沉迷
         if (AgeRange>=1 && AgeRange < 18)
         {
-            RemainingTimeSum = RemainingTimeSum + Time.deltaTime;
+            //RemainingTimeSum = RemainingTimeSum + Time.deltaTime;
+            RemainingTimeSum = Time.realtimeSinceStartup;
 
             //10秒后自动关闭游戏
 

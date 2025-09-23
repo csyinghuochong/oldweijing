@@ -54,7 +54,7 @@ public class UI_OpenCreateRose : MonoBehaviour {
         if (Game_PublicClassVar.Get_wwwSet.AgeRange < 12) {
 
             //禁止登录游戏
-            Hint2("您目前为未成年人账号，已被纳入防沉迷系统。根据适龄提示，此时段本游戏将无法为不满12周岁未成年人用户提供任何形式的游戏服务。");
+            Hint2("您目前为未成年人账号，已被纳入防沉迷系统。根据适龄提示，此时段本游戏将无法为未成年人用户提供任何形式的游戏服务。");
             return;
 
         }
