@@ -60,7 +60,7 @@ public class UI_OpenCreateRose : MonoBehaviour {
         }
 
         //判断当前是否进行防沉迷验证
-        if (Game_PublicClassVar.Get_wwwSet.AgeRange < 17)
+        if (Game_PublicClassVar.Get_wwwSet.AgeRange <= 17)
         {
             if (Game_PublicClassVar.Get_wwwSet.RemainingTime <= 1) {
                 Hint2("您目前为未成年人账号，已被纳入防沉迷系统。根据国家新闻出版署《关于进一步严格管理切实防止未成年人沉迷网络游戏的通知》，仅每周五、周六、周日和法定节假日每日20时至21时提供1小时网络游戏服务。"); 
@@ -80,6 +80,11 @@ public class UI_OpenCreateRose : MonoBehaviour {
             return;
         }
 
+
+        Obj_CreateRose.SetActive(true);
+        GameObject.Find("Canvas/XieYiText").gameObject.SetActive(false);
+
+        /*
 
         if (Game_PublicClassVar.Get_wwwSet.CreateRoseDataNum < 2)
         {
@@ -105,6 +110,8 @@ public class UI_OpenCreateRose : MonoBehaviour {
                 GameObject.Find("Canvas/XieYiText").gameObject.SetActive(false);
             }
         }
+        */
+        
     }
 
 
