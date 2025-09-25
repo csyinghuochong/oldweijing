@@ -29,6 +29,7 @@
         <activity
             android:name="com.ChinaBoy.molong.MainActivity"
             android:configChanges="fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen"
+            tools:replace="android:configChanges"
             android:exported="true"
             android:launchMode="singleTask"
             android:noHistory="false" >
@@ -48,6 +49,7 @@
             android:launchMode="singleTop" />
         <activity
             android:name="com.tencent.tauth.AuthActivity"
+            android:exported="true"
             android:launchMode="singleTask"
             android:noHistory="true" >
             <intent-filter>
