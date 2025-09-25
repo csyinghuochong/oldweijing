@@ -9,7 +9,7 @@ public class UI_TodayGift : MonoBehaviour
     public GameObject Obj_RewardItemObjSet;
     public GameObject Obj_RewardItemObj;
     public GameObject Obj_Num;
-
+    private string[] rewardStr = "3,500".Split(';');
 
     void Start()
     {
@@ -19,8 +19,6 @@ public class UI_TodayGift : MonoBehaviour
     public void Set()
     {
         Game_PublicClassVar.Get_function_UI.DestoryTargetObj(Obj_RewardItemObjSet);
-        
-        string[] rewardStr = "3,500".Split(';');
         
         //显示奖励
         for (int i = 0; i <= rewardStr.Length - 1; i++)
@@ -64,8 +62,6 @@ public class UI_TodayGift : MonoBehaviour
     // 观看完成后的回调
     private void OnRewardArrived(bool isRewardValid, int rewardType, IRewardBundleModel extraInfo)
     {
-        string[] rewardStr = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("Value", "ID", "TodayGiftReward", "GameMainValue").Split(';');
-
         // 记录领取
         string num = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("TodayGiftStatus", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseData");
         num = (int.Parse(num) + 1).ToString();
