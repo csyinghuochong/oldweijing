@@ -68,7 +68,7 @@ public class UI_TodayGift : MonoBehaviour
 
         // 记录领取
         string num = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("TodayGiftStatus", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseData");
-        num = num + 1;
+        num = (int.Parse(num) + 1).ToString();
         Game_PublicClassVar.Get_function_DataSet.DataSet_WriteData("TodayGiftStatus", num, "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseData");
         Game_PublicClassVar.Get_function_DataSet.DataSet_SetXml("RoseData");
 
@@ -78,6 +78,9 @@ public class UI_TodayGift : MonoBehaviour
             string[] rewardYueKaStr = rewardStr[i].Split(',');
             Game_PublicClassVar.Get_function_Rose.SendRewardToBag(rewardYueKaStr[0], int.Parse(rewardYueKaStr[1]));
         }
+        
+        //显示次数
+        Obj_Num.GetComponent<Text>().text = "今日领取:" + num +"/3";
     }
 
     public void CloseUI()
