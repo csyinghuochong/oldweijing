@@ -7,12 +7,26 @@ public class UI_GotoNewGame : MonoBehaviour
 {
     public GameObject Obj_RewardItemObjSet;
     public GameObject Obj_RewardItemObj;
+    public GameObject Obj_LingQuShow;
+    public GameObject Obj_LingQuButton;
     public string[] rewardStr;
 
     void Start()
     {
         rewardStr = "3,500".Split(';');
         Set();
+
+        string yueKaDayStatus = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("NewGameStatus", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseData");
+        if (yueKaDayStatus == "1")
+        {
+            Obj_LingQuShow.SetActive(true);
+            Obj_LingQuButton.SetActive(false);
+        }
+        else {
+            Obj_LingQuShow.SetActive(false);
+            Obj_LingQuButton.SetActive(true);
+        }
+
     }
 
     public void Set()
@@ -34,17 +48,24 @@ public class UI_GotoNewGame : MonoBehaviour
 
     public void OnBtn_Get()
     {
-        string yueKaDayStatus = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("NewGameStatus", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseData");
-        if (yueKaDayStatus == "1") {
-            Game_PublicClassVar.Get_function_UI.GameHint("已经领取");
-            return;
-        }
 
         // 记录领取
         Game_PublicClassVar.Get_function_DataSet.DataSet_WriteData("NewGameStatus", "1", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseData");
         Game_PublicClassVar.Get_function_DataSet.DataSet_SetXml("RoseData");
 
         Application.OpenURL("https://www.taptap.cn/app/271100");
+
+        string yueKaDayStatus = Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("NewGameStatus", "ID", Game_PublicClassVar.Get_wwwSet.RoseID, "RoseData");
+        if (yueKaDayStatus == "1")
+        {
+            Obj_LingQuShow.SetActive(true);
+            Obj_LingQuButton.SetActive(false);
+        }
+        else
+        {
+            Obj_LingQuShow.SetActive(false);
+            Obj_LingQuButton.SetActive(true);
+        }
 
         //领取奖励
         OnRewardArrived();
