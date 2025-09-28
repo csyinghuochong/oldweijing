@@ -50,7 +50,7 @@ public class AdManager: MonoBehaviour
         Debug.Log("CSJM_Unity "+ "Example " + "sdk是否初始化成功, IsSdkReady: " + Pangle.IsSdkReady());
     }
 
-    void Start()
+    public void InitSDK()
     {
         // sdk初始化
         SDKConfiguration sdkConfiguration = new SDKConfiguration.Builder()
@@ -65,7 +65,7 @@ public class AdManager: MonoBehaviour
             .SetTitleBarTheme(AdConst.TITLE_BAR_THEME_LIGHT) // 设置落地页主题
             .SetKeyWords("") // 设置用户画像关键词列表
             .Build();
-        
+
         Pangle.Init(sdkConfiguration); // 合规要求，初始化分为2步，第一步先调用init
         Pangle.Start(SdkInitCallback); // 第二步再调用start。注意在初始化回调成功后再请求广告
     }

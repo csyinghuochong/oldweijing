@@ -56,6 +56,7 @@ public class XieYiText : MonoBehaviour
         {
             this.UI_YinSiXieYi.SetActive(false);
             GameObject.FindWithTag("Tag_WWWSet").GetComponent<TapTapLogin>().OnTapLoginButtonClick();
+            AdManager.Instance.InitSDK();
         }
         else
         {
@@ -91,6 +92,7 @@ public class XieYiText : MonoBehaviour
 
         PlayerPrefs.SetString(UIYinSiKey, "1");
         GameObject.FindWithTag("Tag_WWWSet").GetComponent<TapTapLogin>().OnTapLoginButtonClick();
+        AdManager.Instance.InitSDK();
     }
 
 
