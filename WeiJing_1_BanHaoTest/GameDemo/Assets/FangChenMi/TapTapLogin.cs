@@ -12,10 +12,11 @@ using System.Collections.Generic;
 public class TapTapLogin : MonoBehaviour
 {
 
+    
     /// <summary>
     /// 初始化 SDK 并判断本地是否已登录，已登录时开始合规认证检查，否则显示登录按钮
     /// </summary>
-    async void Start()
+    public async void InitSDKAndLogin()
     {
         Debug.Log("GameSDKManager.Instance.InitSDK");
 
@@ -46,6 +47,8 @@ public class TapTapLogin : MonoBehaviour
             //Debug.Log("本地有用户信息");
             //StartCheckCompliance();
         }
+
+        OnTapLoginButtonClick();
     }
 
     /// <summary>

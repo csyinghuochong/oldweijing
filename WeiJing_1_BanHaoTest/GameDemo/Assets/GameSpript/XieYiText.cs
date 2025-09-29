@@ -55,7 +55,7 @@ public class XieYiText : MonoBehaviour
         if (PlayerPrefs.GetString(UIYinSiKey).Equals("1"))
         {
             this.UI_YinSiXieYi.SetActive(false);
-            GameObject.FindWithTag("Tag_WWWSet").GetComponent<TapTapLogin>().OnTapLoginButtonClick();
+            GameObject.FindWithTag("Tag_WWWSet").GetComponent<TapTapLogin>().InitSDKAndLogin();
             AdManager.Instance.InitSDK();
         }
         else
@@ -91,7 +91,7 @@ public class XieYiText : MonoBehaviour
         }
 
         PlayerPrefs.SetString(UIYinSiKey, "1");
-        GameObject.FindWithTag("Tag_WWWSet").GetComponent<TapTapLogin>().OnTapLoginButtonClick();
+        GameObject.FindWithTag("Tag_WWWSet").GetComponent<TapTapLogin>().InitSDKAndLogin();
         AdManager.Instance.InitSDK();
     }
 
