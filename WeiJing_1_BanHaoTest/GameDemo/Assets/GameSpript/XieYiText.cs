@@ -39,6 +39,14 @@ public class XieYiText : MonoBehaviour
     public string javaClassStr = "com.example.alinewsdk.AliSDKActivity";  //"com.mafeng.aliopensdk.AliSDKActivity";
     public string javaActiveStr = "currentActivity";
 
+    private void Awake()
+    {
+        UnityEngine.Analytics.Analytics.enabled = false;
+        UnityEngine.Analytics.Analytics.deviceStatsEnabled = false;
+        UnityEngine.Analytics.Analytics.initializeOnStartup = false;
+        UnityEngine.Analytics.Analytics.limitUserTracking = false;
+        UnityEngine.Analytics.PerformanceReporting.enabled = false;
+    }
 
     // Start is called before the first frame update
     void Start()
