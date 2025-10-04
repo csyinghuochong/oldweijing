@@ -86,7 +86,9 @@ public class UI_EnterGame : MonoBehaviour {
                             float transfer_Y = float.Parse(Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("MapTransfer_Y", "ID", SceneTransferID, "SceneTransfer_Template"));
                             float transfer_Z = float.Parse(Game_PublicClassVar.Get_function_DataSet.DataSet_ReadData("MapTransfer_Z", "ID", SceneTransferID, "SceneTransfer_Template"));
                             //Debug.Log("设置坐标点");
+                            Debug.Log("坐标111:"+ Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.transform.position);
                             Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.transform.position = new Vector3(transfer_X, transfer_Y, transfer_Z);
+                            Debug.Log("坐标222:" + Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.transform.position);
                             if (!clearnStatus) {
                                 ClearnUI();
                                 clearnStatus = true;
@@ -170,6 +172,7 @@ public class UI_EnterGame : MonoBehaviour {
             if (mAsyn != null) {
                 if (mAsyn.isDone)
                 {
+                    Debug.Log("坐标333:" + Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.transform.position);
                     enterGameStatus = false;
                     Destroy(obj_loading,1);     //延迟1秒关闭,防止穿帮
                     Game_PublicClassVar.Get_game_PositionVar.EnterScenceStatus = true;
@@ -200,8 +203,8 @@ public class UI_EnterGame : MonoBehaviour {
                             Game_PublicClassVar.Get_game_PositionVar.OBJ_UI_Set.GetComponent<UI_Set>().Obj_UIGameNanDu.GetComponent<Text>().text = "游戏模式:地狱";
                             break;
                     }
-                    
 
+                    Debug.Log("坐标444:" + Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.transform.position);
                 }
             }
         }

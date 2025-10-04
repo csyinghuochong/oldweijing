@@ -179,6 +179,7 @@ public class DoorWay : MonoBehaviour {
         if (collider.gameObject.layer == 14)
         {
             Debug.Log("传送:" + DoorWayID);
+            Debug.Log("当前坐标点:"+ Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.transform.position);
             //获取当前角色等级
             int roseLv = Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Proprety>().Rose_Lv;
             //获取场景进入等级NextMapName
@@ -200,7 +201,7 @@ public class DoorWay : MonoBehaviour {
                 SkillObject_p.transform.localScale = new Vector3(1, 1, 1);
 
                 //切换场景
-                //EnterGame();
+                EnterGame();
 
                 Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Status>().RoseStatus = "1";
                 Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.GetComponent<Rose_Status>().Move_Target_Status = false;
@@ -212,6 +213,7 @@ public class DoorWay : MonoBehaviour {
 
                 //播放音效
                 Game_PublicClassVar.Get_function_UI.PlaySource("20008", "2");
+                Debug.Log("当前坐标点222:" + Game_PublicClassVar.Get_game_PositionVar.Obj_Rose.transform.position);
             }
             else {
                 Game_PublicClassVar.Get_function_UI.GameGirdHint("击败场景怪物提升至" + sceneEnterLv + "级后进入！");
