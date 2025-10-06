@@ -45,12 +45,12 @@ public static class CSJMDAdPositionId
         // draw
         public const string M_DRAW_ID = "948423177";
 #else
-    public const string APP_ID = "5739985";
+    public const string APP_ID = "5745977";
 
     /* 穿山甲广告位ID */
     // 激励视频
-    public const string CSJ_REWARD_V_ID = "970521679";
-    public const string CSJ_REWARD_H_ID = "970521679";
+    public const string CSJ_REWARD_V_ID = "971411248";
+    public const string CSJ_REWARD_H_ID = "971411248";
     // 信息流
     public const string CSJ_NATIVE_EXPRESS_ID = "901121253";
     public const string CSJ_NATIVE_ID = "901121737";
